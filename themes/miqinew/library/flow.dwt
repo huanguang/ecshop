@@ -1,0 +1,32 @@
+<tr>
+    <td>所在地区：<br>
+                <div style="position:relative; float:left">
+                <select name="country" id="selCountries_0" onchange="region.changed(this, 1, 'selProvinces_0')" style="padding:5px 4px;border:1px solid #abadb3;">
+        <option value="0">{$lang.please_select}{$name_of_region[0]}</option>
+        <!-- {foreach from=$country_list item=country} -->
+        <option value="{$country.region_id}" >{$country.region_name}</option>
+        <!-- {/foreach} -->
+      </select>
+      <select name="province" id="selProvinces_0" onchange="region.changed(this, 2, 'selCities_0')" style="padding:5px 4px;border:1px solid #abadb3;">
+        <option value="0">{$lang.please_select}{$name_of_region[1]}</option>
+        <!-- {foreach from=$province_list.$sn item=province} -->
+        <option value="{$province.region_id}" {if $consignee.province eq $province.region_id}selected{/if}>{$province.region_name}</option>
+        <!-- {/foreach} -->
+      </select>
+      <select name="city" id="selCities_0" onchange="region.changed(this, 3, 'selDistricts_0')" style="padding:5px 4px;border:1px solid #abadb3;">
+        <option value="0">{$lang.please_select}{$name_of_region[2]}</option>
+        <!-- {foreach from=$city_list.$sn item=city} -->
+        <option value="{$city.region_id}" {if $consignee.city eq $city.region_id}selected{/if}>{$city.region_name}</option>
+        <!-- {/foreach} -->
+      </select>
+      <select name="district" id="selDistricts_0" {if !$district_list.$sn}style="display:none;padding:5px 4px;border:1px solid #abadb3;"{/if} >
+        <option value="0">{$lang.please_select}{$name_of_region[3]}</option>
+        <!-- {foreach from=$district_list.$sn item=district} -->
+        <option value="{$district.region_id}" {if $consignee.district eq $district.region_id}selected{/if}>{$district.region_name}</option>
+        <!-- {/foreach} -->
+      </select>
+
+        </div>
+
+    </td>
+  </tr>

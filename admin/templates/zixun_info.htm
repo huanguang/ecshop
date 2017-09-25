@@ -1,0 +1,22 @@
+<!-- $Id: order_info.htm 17060 2010-03-25 03:44:42Z liuhui $ -->
+
+{include file="pageheader.htm"}
+<script src="../js/transport.js"></script>
+{insert_scripts files="topbar.js,../js/utils.js,listtable.js,selectzone.js,../js/common.js"}
+<ul>
+  {foreach from=$msg item=msgs}
+  
+  {if $msgs.status eq '1'}
+  <li style="width:600px;text-align: right;    list-style-type: none;">{$msgs.add_time} &nbsp;&nbsp;{$msgs.message} &nbsp;&nbsp;客服</li>
+  {else}
+  <li style="width:600px;    list-style-type: none;">{$msgs.user_name} &nbsp;&nbsp;{$msgs.message} &nbsp;&nbsp;{$msgs.add_time}</li>
+  {/if}
+  {/foreach}
+</ul>
+<form action="zixun.php?act=huifus" method="post" name="theForm" onsubmit="if(document.getElementById('huifu').value == ''){ alert('请输入内容'); return false;}">
+  <div><textarea name="huifu" id="huifu"></textarea></div>
+  <div><input type="submit" value="回复"/></div>
+  <input type="hidden" name="uid" value="{$uid}">
+</form>
+
+{include file="pagefooter.htm"}

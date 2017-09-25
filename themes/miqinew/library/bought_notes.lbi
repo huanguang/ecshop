@@ -1,0 +1,31 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!--购买记录 START-->
+
+
+
+
+<!-- {if $notes} -->
+<div class="product2014_content_3" id="bodyb_3" style="display: block;"> 
+      <div class="con"> 
+          <table width="100%" border="0" cellspacing="0" cellpadding="0" class="jyjl_ta">
+  <tbody><tr>
+    <td width="20%" align="center" class="jyjl_td">买 家</td>
+    <td width="20%" align="center" class="jyjl_td">产品价格</td>
+    <td width="20%" align="center" class="jyjl_td">购买数量</td>
+    <td width="20%" align="center" class="jyjl_td">付款时间</td>
+    <td width="20%" align="center" class="jyjl_td">产品名称</td>
+  </tr>
+  <!-- {foreach from=$notes item=note} -->
+  <tr>
+    <td align="center"><!-- {if $note.user_name} -->{$note.user_name|escape:html}<!-- {else} -->{$lang.anonymous}<!-- {/if} --> <span class="span_1"></span></td>
+    <td align="center"><span class="span_2"><!--$note.goods_price}--></span></td>
+    <td align="center">{$note.goods_number}</td>
+    <td align="center"> {$note.add_time} </td>
+    <td align="center">{$note.goods_name|truncate:12}</td>
+  </tr>
+ <!-- {/foreach} -->
+</tbody></table>
+      </div> 
+    </div>
+
+{/if}

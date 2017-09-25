@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>品牌特卖-秀当红酒商城</title>
+
+<link rel="icon" href="favicon.gif" type="image/gif" />
+
+<link href="css/common.css" rel="stylesheet" type="text/css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+<script type="text/javascript" src="js/nav.js"></script>
+<script type="text/javascript" src="js/tuan.js"></script>
+<script type="text/javascript" src="js/modal.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<style>
+#nav .mod_subcate{top:0;}
+</style>
+</head>
+
+<body>
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+<div class="cur_wz">
+  <!-- #BeginLibraryItem "/library/ur_here.lbi" --><!-- #EndLibraryItem -->
+</div>
+<div class="main_box brand_box">
+	<div class="rmen_pinpai"><span>热门品牌<u>HOT</u></span></div>
+  <div class="scrollBox">
+        <div class="ohbox" style="left: 10px;">
+            <ul class="piclist" style="width: 1863px;">
+            <!-- {foreach from=$brand_lists item=brand_list name=names} -->
+            <!-- {if $smarty.foreach.names.iteration < '6'} -->
+                <li><a {if $smarty.foreach.names.iteration eq '1'}href="#lafei"{/if}{if $smarty.foreach.names.iteration eq '2'}href="#longc"{/if}{if $smarty.foreach.names.iteration eq '3'}href="#magejz"{/if}{if $smarty.foreach.names.iteration eq '4'}href="#houbowan"{/if}{if $smarty.foreach.names.iteration eq '5'}href="#biedejz"{/if}><div class="hongyansew"></div><img src="data/brand_tupian/{$brand_list.brand_tupian}" class="gushi_shuowan"><img src="data/brandlogo/{$brand_list.brand_logo}" class="gushi_shuowan2"><p>{$brand_list.brand_name}</p></a></li>
+                <!-- {/if} -->
+                <!-- {/foreach} -->
+            </ul>
+	  	</div>
+	 	<div class="pageBtn">
+            <span class="prev"><img src="images/a_errow01.png" width="25" height="43"></span>
+            <span class="next"><img src="images/a_errow02.png" width="25" height="43"></span>
+    	</div>
+    </div>
+	<script type="text/javascript">jQuery(".scrollBox").slide({titCell:".list li",mainCell:".piclist",autoPage:true,effect:"left",vis:3});</script>
+    
+<!-- {foreach from=$brand_lists item=brand_list name=names} -->
+    <a {if $smarty.foreach.names.iteration eq '1'}name="lafei" href="lafei"{/if}{if $smarty.foreach.names.iteration eq '2'}name="longc" href="longc"{/if}{if $smarty.foreach.names.iteration eq '3'}name="magejz" href="magejz"{/if}{if $smarty.foreach.names.iteration eq '4'} name="houbowan" href="houbowan"{/if}{if $smarty.foreach.names.iteration eq '5'} name="biedejz" href="biedejz"{/if}></a>
+    <div class="pin_pai_cun"><span><img src="data/brandlogo/{$brand_list.brand_logo}"></span></div>
+    <div class="gengduo_yinc">
+        <!-- {foreach from=$brand_list.goods item=goods name=namess} -->
+        <!-- {if $smarty.foreach.namess.iteration < '3'} -->
+    	<dl>
+            <dt>
+                <a href="goods.php?id={$goods.goods_id}"><img src="{$goods.goods_img}" width="90" height="178"></a>
+            </dt>
+            <dd><b><a href="goods.php?id={$goods.goods_id}">{$goods.goods_name}</a></b>
+          <p class="ershisi_001">{$goods.goods_desc}</p><p class="ershisi_002"><span>品牌介绍：</span>{$brand_list.brand_desc}</p><div class="jiage_shuzi123"><span>￥</span><strong>{if $goods.promote_price}{$goods.promote_price}{else}{$goods.shop_price}{/if}</strong><span>{if $goods.promote_price}{$goods.zhekou1}{else}{$goods.zhekou2}{/if}折</span><span class="yuanjia_shuzibai">原价：</span><s>￥{$goods.market_price}</s><div class="pro_time2"><p><i class="time_icon2"></i><span class="timer" showday="show" value="{$goods.promote_end_date}"></span></p><span></span></div></div></dd>
+        </dl>
+        <!-- {/if} -->
+       <!--  {/foreach} -->
+    </div>
+<!-- {/foreach} -->
+<script type="text/javascript">
+    
+    $(function(){
+        var datename = new Date();
+        var Offset = datename.getTimezoneOffset() * 28800;
+        
+        setInterval(function(){
+          $(".timer").each(function(){
+            var obj = $(this);
+            var endTime = new Date(parseInt(obj.attr('value')) * 1000 - Offset) ;
+            var show_day =  obj.attr('showday');
+            var nowTime = new Date();
+            var nMS=endTime.getTime() - nowTime.getTime();
+            var myD=Math.floor(nMS/(1000 * 60 * 60 * 24));
+            var myH_show=Math.floor(nMS/(1000*60*60) % 24);
+            var myH=Math.floor(nMS/(1000*60*60));
+            var myM=Math.floor(nMS/(1000*60)) % 60;
+            var myS=Math.floor(nMS/1000) % 60;
+            var myMS=Math.floor(nMS/100) % 10;
+            
+            if(myS>=0){
+                if(show_day == 'show')
+                {
+                    var str = '剩'+myD+'天'+myH_show+'小时'+myM+'分'+myS+'秒';
+                }
+                else
+                {
+                    var str = '<span>'+myH+'</span>时<span>'+myM+'</span>分<span>'+myS+'</span>秒';
+                }
+            }else{
+                var str = "已结束！";   
+            }
+            obj.html(str);
+          });
+        }, 100);
+    })
+    
+</script>
+
+</div>
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem --> 
+</body>
+</html>

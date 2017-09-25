@@ -1,0 +1,232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{$page_title}</title>
+<link rel="icon" href="images/favicon.gif" type="image/gif" >
+<link href="css/common.css" type="text/css" rel="stylesheet" />
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+<link href="css/tuang.css" type="text/css" rel="stylesheet" />
+<!-- {if $cat_style} -->
+<link href="{$cat_style}" rel="stylesheet" type="text/css" />
+<!-- {/if} -->
+<link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+<script type="text/javascript" src="js/nav.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+<script type="text/javascript" src="js/modal.js"></script>
+<script language="JavaScript" type="text/javascript" src="js/common_1.js"></script>	
+<style>
+#nav .mod_subcate{top:0;}
+.page{margin-top:0px;margin-bottom:50px;}
+</style>
+{* 包含脚本文件 *}
+{insert_scripts files='jquery-1.9.1.min.js,jquery.json.js'}
+{insert_scripts files='common.js,global.js,compare.js'}
+</head>
+
+<body>
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+
+<!-- cur begin -->
+<div class="cur_wz">
+	<!-- #BeginLibraryItem "/library/ur_here.lbi" --><!-- #EndLibraryItem -->
+</div>
+<!-- cur end -->
+
+<!-- xxfl beign -->
+<!-- #BeginLibraryItem "/library/zuhesousuo.lbi" --><!-- #EndLibraryItem -->
+<!--- xxfl end --->
+
+<!--- 婚宴专区 --->
+<div class="main_box">
+        <!--- 筛选 --->
+<div class="screen">
+    	<ul>
+        	<li class="cur"><a href="{$script_name}.php?category={$category}&display={$pager.display}&brand={$brand_id}&price_min={$price_min}&price_max={$price_max}&filter_attr={$filter_attr}&page={$pager.page}&sort=goods_id&order=<!-- {if $pager.sort == 'goods_id' && $pager.order == 'DESC'} -->ASC<!-- {else} -->DESC<!-- {/if} -->#goods_list">全部</a></li>
+        	<li class="li1"><a href="{$script_name}.php?category={$category}&display={$pager.display}&brand={$brand_id}&price_min={$price_min}&price_max={$price_max}&filter_attr={$filter_attr}&page={$pager.page}&sort=last_update&order=<!-- {if $pager.sort == 'last_update' && $pager.order == 'DESC'} -->ASC<!-- {else} -->DESC<!-- {/if} -->#goods_list">人气</a></li>
+        	<li class="li2"><a href="{$script_name}.php?category={$category}&display={$pager.display}&brand={$brand_id}&price_min={$price_min}&price_max={$price_max}&filter_attr={$filter_attr}&page={$pager.page}&sort=shop_price&order=<!-- {if $pager.sort == 'shop_price' && $pager.order == 'ASC'} -->DESC<!-- {else} -->ASC<!-- {/if} -->#goods_list">销量</a></li>
+        </ul>
+        <div class="money">
+        	价格
+        	<input type="text" value="{if $price_min}{$price_min}{else}0{/if}" id="max">-<input type="text" id="min" value="{if $price_max}{$price_max}{else}0{/if}">
+            <input type="button" onclick="cha();" class="an" value="确定">
+            <script type="text/javascript">
+                function cha(){
+                    var max = document.getElementById('max').value;
+                    var min = document.getElementById('min').value;
+                    if(max == min || max > min){
+                        alert('请输入正确的价格区间！！');
+                    }else{
+                   window.location.href="{$script_name}.php?category={$category}&display={$pager.display}&brand={$brand_id}&price_min="+max+"&price_max="+min+"&filter_attr={$filter_attr}&page={$pager.page}&sort=shop_price&order=<!-- {if $pager.sort == 'shop_price' && $pager.order == 'ASC'} -->DESC<!-- {else} -->ASC<!-- {/if} -->#goods_list";
+                    }
+                }
+                function chaxun(obj,aa){
+                    var cu = document.getElementById('cuxiao').value;
+                    var bao = document.getElementById('baoyou').value;
+                    var add = '';
+                    var ass = '';
+                    var asss = '';
+                    if(obj.value == 0){
+                        obj.value = 1;
+                            
+                            }else{
+                        obj.value = 0;
+                        }
+                    if(cu == 1){
+                            
+                        add = '&cuxiao=1';
+                        if(aa == 'cuxiao'){
+                            add = '&cuxiao='+obj.value;
+                        }else{
+                           ass = '&baoyou='+obj.value;
+                        }
+                    }else if(bao == 1){
+                        add = '&baoyou=1';
+                        if(aa == 'baoyou'){
+                            add = '&baoyou='+obj.value;
+                        }else{
+                           ass = '&cuxiao='+obj.value;
+                        }
+                    }else{
+
+
+                        if(aa == 'cuxiao'){
+                            asss = '&cuxiao='+obj.value;
+                        }else{
+                            asss = '&baoyou='+obj.value; 
+                        }
+                    }
+                    
+                    
+
+                    window.location.href="{$script_name}.php?category={$category}&display={$pager.display}&"+add+ass+asss+"&brand={$brand_id}&price_min={$price_min}&price_max={$price_max}&filter_attr={$filter_attr}&page={$pager.page}&sort=shop_price&order=<!-- {if $pager.sort == 'shop_price' && $pager.order == 'ASC'} -->DESC<!-- {else} -->ASC<!-- {/if} -->#goods_list"
+                }
+            </script>
+        </div>
+<div class="xlsx fl">
+        	<a href="###"><label><input name="" id="cuxiao" onclick="chaxun(this,'cuxiao');" {if $cuxiao eq '1'}checked="checked"{/if} type="checkbox" value="{$cuxiao}" /><span>折扣促销</span></label></a>
+<div class="xlsx_1">
+            	<ul>
+                	<li><label><input name="" id="baoyou" onclick="chaxun(this,'baoyou');" {if $baoyou eq '1'}checked="checked"{/if} type="checkbox" value="{$baoyou}" /><span>包邮</span></label></li>
+                	<!--<li><label><input name="" type="checkbox" value="" /><span>折扣促销</span></label></li>
+                	<li><label><input name="" type="checkbox" value="" /><span>阿斯达</span></label></li>
+                	<li><label><input name="" type="checkbox" value="" /><span>阿斯达</span></label></li>
+                	<li><label><input name="" type="checkbox" value="" /><span>阿斯达</span></label></li>-->
+                </ul>
+
+            </div>
+    </div>
+    <div class="page3 fr">
+        	<p>共有&nbsp;<span>{$pager.record_count}</span>&nbsp;件商品</p>
+    </div>
+    
+        <div class="qhks fr">
+        <p class="p1"><a class="a1" onclick="javascript:trc(1)" id="a_1_1"></a></p>
+        <p class="p2"><a onclick="javascript:trc(2)" id="a_1_2"></a></p>
+        </div>
+
+        <div class="clear"></div>
+    </div>
+    <!--- 筛选 end --->
+<!--- 列表 --->
+<div class="wedding" id="trc1">
+            	<ul>
+                                    <!--{foreach from=$goods_list item=goods name=goods_list}-->
+    <!-- {if $goods.goods_id} -->
+					<li>
+						<div class="pic"><a href="goods.php?id={$goods.goods_id}"><img src="{$goods.goods_thumb}" width="185" height="160"></a></div>
+						<div class="wz">
+                          <div class="jg">
+                                <!--{if $goods.promote_price neq "" } -->
+            <span>{$goods.promote_price}</span>
+            <!--{else}-->
+            <span>{$goods.shop_price}</span>
+            <!--{/if}-->
+            <!-- {if $show_marketprice} -->
+           <s>{$goods.market_price}</s>
+            <!-- {/if} -->
+                            </div>
+                        	<div class="tit"><a href="goods.php?id={$goods.goods_id}">{$goods.goods_name}</a></div>
+                            <div class="an">
+                            	<a class="gwc" href="javascript:addToCartShowDiv({$goods.goods_id},1,'best');"><img src="images/car.png" />加入购物车</a>
+                            	<a class="ljgm" href="goods.php?id={$goods.goods_id}">立即购买</a>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="yshp">
+                            	<div class="yshp_l">已售：<span>{$goods.count_xiaoliang}</span></div>
+                            	<div class="yshp_r">好评：<span>{if $goods.count_comment eq '0'}100%{else}{$goods.count_comment}{/if}</span></div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="sucess_joinCart" id="addtocartdialog_retui_{$goods.goods_id}_best"></div>
+                      	</div>
+					</li>
+                     <!--{/if}-->
+    <!--{/foreach}-->
+                </ul>
+                <div class="clear"></div>
+
+            </div>
+<div class="wedding" id="trc2" style="display:none">
+                                    <!--{foreach from=$goods_list item=goods name=goods_list}-->
+    <!-- {if $goods.goods_id} -->
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="wedding_ta">
+
+  <tr>
+    <td width="200" rowspan="2" align="center"><a href="goods.php?id={$goods.goods_id}"><img src="{$goods.goods_thumb}" width="185" height="160" /></a></td>
+    <td height="80" colspan="2" valign="top" class="wedding_td_2">
+      <h2><a href="">{$goods.goods_name}</a></h2>
+      <!--{if $goods.promote_price neq "" } -->
+            <p>{$goods.promote_price}</p>
+            <!--{else}-->
+            <p>{$goods.shop_price}</p>
+            <!--{/if}-->
+    </td>
+    <td align="center" valign="bottom" class="wedding_td_4"><a href="javascript:addToCartShowDiv2({$goods.goods_id},1,'best');">加入购物车</a></td>
+    <td width="190" rowspan="2" align="center"><img src="images/yz_13.jpg" width="165" height="102" /><div class="sucess_joinCart" id="addtocartdialog_retui2_{$goods.goods_id}_best"></div></td>
+
+  </tr>
+
+  <tr>
+    <td width="210" align="left" valign="middle" class="wedding_td_3">
+    <p><span>已售：</span>&nbsp;{$goods.count_xiaoliang}</p> 
+    </td>
+    <td width="210" align="left" valign="middle" class="wedding_td_3"><p><span>好评：</span>&nbsp;{if $goods.count_comment eq '0'}100%{else}{$goods.count_comment}{/if}</p></td>
+    <td align="center" valign="middle" class="wedding_td_5"><a href="goods.php?id={$goods.goods_id}">立即购买</a></td>
+    </tr>
+</table>
+
+                 <!--{/if}-->
+    <!--{/foreach}-->
+<div class="clear"></div>
+
+            </div>
+            <div style="height:56px;">
+            <!-- #BeginLibraryItem "/library/pages.lbi" --><!-- #EndLibraryItem -->
+            </div>
+            <!--- 列表 --->
+<script>
+	function trc(n)
+	{
+		if(n==1){
+			document.getElementById('a_1_1').className = 'a1';
+			document.getElementById('a_1_2').className = '';
+			
+			document.getElementById('trc1').style.display = '';
+			document.getElementById('trc2').style.display = 'none';
+		}else if(n==2){
+			document.getElementById('a_1_1').className = '';
+			document.getElementById('a_1_2').className = 'a1';
+			
+			document.getElementById('trc1').style.display = 'none';
+			document.getElementById('trc2').style.display = '';
+		}
+	}
+	</script>            
+</div>
+<!--- 婚宴专区 end --->
+
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem --> 
+</body>
+</html>

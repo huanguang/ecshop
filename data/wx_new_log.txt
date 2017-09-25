@@ -1,0 +1,1474 @@
+-----------2015-12-14 14:50:35-----------------传递过来的XML
+'<xml><appid><![CDATA[wx7185301381c3c8d0]]></appid>
+<attach><![CDATA[128]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[N]]></is_subscribe>
+<mch_id><![CDATA[1283826001]]></mch_id>
+<nonce_str><![CDATA[sk1b6h3nbf69ns8jk0n3iuo7kg80wwg6]]></nonce_str>
+<openid><![CDATA[o7V1swQL0a7TC1F9X8lLZfw6XSkU]]></openid>
+<out_trade_no><![CDATA[2015121403363]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[5440199499502FBBEC15DD4423946213]]></sign>
+<time_end><![CDATA[20151214145035]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[NATIVE]]></trade_type>
+<transaction_id><![CDATA[1006250668201512142079176927]]></transaction_id>
+</xml>'
+
+
+-----------2015-12-14 14:50:35-----------------支付成功
+
+
+
+-----------2015-12-14 14:50:35-----------------订单金额0.01
+
+
+
+-----------2015-12-14 14:50:52-----------------传递过来的XML
+'<xml><appid><![CDATA[wx7185301381c3c8d0]]></appid>
+<attach><![CDATA[128]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[N]]></is_subscribe>
+<mch_id><![CDATA[1283826001]]></mch_id>
+<nonce_str><![CDATA[sk1b6h3nbf69ns8jk0n3iuo7kg80wwg6]]></nonce_str>
+<openid><![CDATA[o7V1swQL0a7TC1F9X8lLZfw6XSkU]]></openid>
+<out_trade_no><![CDATA[2015121403363]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[5440199499502FBBEC15DD4423946213]]></sign>
+<time_end><![CDATA[20151214145035]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[NATIVE]]></trade_type>
+<transaction_id><![CDATA[1006250668201512142079176927]]></transaction_id>
+</xml>'
+
+
+-----------2015-12-14 14:50:52-----------------支付成功
+
+
+
+-----------2015-12-14 14:50:52-----------------订单金额0.01
+
+
+
+-----------2015-12-14 14:51:10-----------------传递过来的XML
+'<xml><appid><![CDATA[wx7185301381c3c8d0]]></appid>
+<attach><![CDATA[128]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[N]]></is_subscribe>
+<mch_id><![CDATA[1283826001]]></mch_id>
+<nonce_str><![CDATA[sk1b6h3nbf69ns8jk0n3iuo7kg80wwg6]]></nonce_str>
+<openid><![CDATA[o7V1swQL0a7TC1F9X8lLZfw6XSkU]]></openid>
+<out_trade_no><![CDATA[2015121403363]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[5440199499502FBBEC15DD4423946213]]></sign>
+<time_end><![CDATA[20151214145035]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[NATIVE]]></trade_type>
+<transaction_id><![CDATA[1006250668201512142079176927]]></transaction_id>
+</xml>'
+
+
+-----------2015-12-14 14:51:10-----------------支付成功
+
+
+
+-----------2015-12-14 14:51:10-----------------订单金额0.01
+
+
+
+-----------2015-12-14 14:51:42-----------------传递过来的XML
+'<xml><appid><![CDATA[wx7185301381c3c8d0]]></appid>
+<attach><![CDATA[128]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[N]]></is_subscribe>
+<mch_id><![CDATA[1283826001]]></mch_id>
+<nonce_str><![CDATA[sk1b6h3nbf69ns8jk0n3iuo7kg80wwg6]]></nonce_str>
+<openid><![CDATA[o7V1swQL0a7TC1F9X8lLZfw6XSkU]]></openid>
+<out_trade_no><![CDATA[2015121403363]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[5440199499502FBBEC15DD4423946213]]></sign>
+<time_end><![CDATA[20151214145035]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[NATIVE]]></trade_type>
+<transaction_id><![CDATA[1006250668201512142079176927]]></transaction_id>
+</xml>'
+
+
+-----------2015-12-14 14:51:42-----------------支付成功
+
+
+
+-----------2015-12-14 14:51:42-----------------订单金额0.01
+
+
+
+-----------2015-12-14 14:54:44-----------------传递过来的XML
+'<xml><appid><![CDATA[wx7185301381c3c8d0]]></appid>
+<attach><![CDATA[128]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[N]]></is_subscribe>
+<mch_id><![CDATA[1283826001]]></mch_id>
+<nonce_str><![CDATA[sk1b6h3nbf69ns8jk0n3iuo7kg80wwg6]]></nonce_str>
+<openid><![CDATA[o7V1swQL0a7TC1F9X8lLZfw6XSkU]]></openid>
+<out_trade_no><![CDATA[2015121403363]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[5440199499502FBBEC15DD4423946213]]></sign>
+<time_end><![CDATA[20151214145035]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[NATIVE]]></trade_type>
+<transaction_id><![CDATA[1006250668201512142079176927]]></transaction_id>
+</xml>'
+
+
+-----------2015-12-14 14:54:44-----------------支付成功
+
+
+
+-----------2015-12-14 14:54:44-----------------订单金额0.01
+
+
+
+-----------2015-12-14 15:24:47-----------------传递过来的XML
+'<xml><appid><![CDATA[wx7185301381c3c8d0]]></appid>
+<attach><![CDATA[128]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[N]]></is_subscribe>
+<mch_id><![CDATA[1283826001]]></mch_id>
+<nonce_str><![CDATA[sk1b6h3nbf69ns8jk0n3iuo7kg80wwg6]]></nonce_str>
+<openid><![CDATA[o7V1swQL0a7TC1F9X8lLZfw6XSkU]]></openid>
+<out_trade_no><![CDATA[2015121403363]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[5440199499502FBBEC15DD4423946213]]></sign>
+<time_end><![CDATA[20151214145035]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[NATIVE]]></trade_type>
+<transaction_id><![CDATA[1006250668201512142079176927]]></transaction_id>
+</xml>'
+
+
+-----------2015-12-14 15:24:47-----------------支付成功
+
+
+
+-----------2015-12-14 15:24:47-----------------订单金额0.01
+
+
+
+-----------2015-12-14 15:54:49-----------------传递过来的XML
+'<xml><appid><![CDATA[wx7185301381c3c8d0]]></appid>
+<attach><![CDATA[128]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[N]]></is_subscribe>
+<mch_id><![CDATA[1283826001]]></mch_id>
+<nonce_str><![CDATA[sk1b6h3nbf69ns8jk0n3iuo7kg80wwg6]]></nonce_str>
+<openid><![CDATA[o7V1swQL0a7TC1F9X8lLZfw6XSkU]]></openid>
+<out_trade_no><![CDATA[2015121403363]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[5440199499502FBBEC15DD4423946213]]></sign>
+<time_end><![CDATA[20151214145035]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[NATIVE]]></trade_type>
+<transaction_id><![CDATA[1006250668201512142079176927]]></transaction_id>
+</xml>'
+
+
+-----------2015-12-14 15:54:49-----------------支付成功
+
+
+
+-----------2015-12-14 15:54:50-----------------订单金额0.01
+
+
+
+-----------2015-12-14 16:24:52-----------------传递过来的XML
+'<xml><appid><![CDATA[wx7185301381c3c8d0]]></appid>
+<attach><![CDATA[128]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[N]]></is_subscribe>
+<mch_id><![CDATA[1283826001]]></mch_id>
+<nonce_str><![CDATA[sk1b6h3nbf69ns8jk0n3iuo7kg80wwg6]]></nonce_str>
+<openid><![CDATA[o7V1swQL0a7TC1F9X8lLZfw6XSkU]]></openid>
+<out_trade_no><![CDATA[2015121403363]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[5440199499502FBBEC15DD4423946213]]></sign>
+<time_end><![CDATA[20151214145035]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[NATIVE]]></trade_type>
+<transaction_id><![CDATA[1006250668201512142079176927]]></transaction_id>
+</xml>'
+
+
+-----------2015-12-14 16:24:52-----------------支付成功
+
+
+
+-----------2015-12-14 16:24:52-----------------订单金额0.01
+
+
+
+-----------2015-12-14 16:54:58-----------------传递过来的XML
+'<xml><appid><![CDATA[wx7185301381c3c8d0]]></appid>
+<attach><![CDATA[128]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[N]]></is_subscribe>
+<mch_id><![CDATA[1283826001]]></mch_id>
+<nonce_str><![CDATA[sk1b6h3nbf69ns8jk0n3iuo7kg80wwg6]]></nonce_str>
+<openid><![CDATA[o7V1swQL0a7TC1F9X8lLZfw6XSkU]]></openid>
+<out_trade_no><![CDATA[2015121403363]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[5440199499502FBBEC15DD4423946213]]></sign>
+<time_end><![CDATA[20151214145035]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[NATIVE]]></trade_type>
+<transaction_id><![CDATA[1006250668201512142079176927]]></transaction_id>
+</xml>'
+
+
+-----------2015-12-14 16:54:58-----------------支付成功
+
+
+
+-----------2015-12-14 16:54:58-----------------订单金额0.01
+
+
+
+-----------2015-12-14 17:55:02-----------------传递过来的XML
+'<xml><appid><![CDATA[wx7185301381c3c8d0]]></appid>
+<attach><![CDATA[128]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[N]]></is_subscribe>
+<mch_id><![CDATA[1283826001]]></mch_id>
+<nonce_str><![CDATA[sk1b6h3nbf69ns8jk0n3iuo7kg80wwg6]]></nonce_str>
+<openid><![CDATA[o7V1swQL0a7TC1F9X8lLZfw6XSkU]]></openid>
+<out_trade_no><![CDATA[2015121403363]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[5440199499502FBBEC15DD4423946213]]></sign>
+<time_end><![CDATA[20151214145035]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[NATIVE]]></trade_type>
+<transaction_id><![CDATA[1006250668201512142079176927]]></transaction_id>
+</xml>'
+
+
+-----------2015-12-14 17:55:02-----------------支付成功
+
+
+
+-----------2015-12-14 17:55:02-----------------订单金额0.01
+
+
+
+-----------2016-01-07 12:11:17-----------------传递过来的XML
+'<xml><appid><![CDATA[wx7185301381c3c8d0]]></appid>
+<attach><![CDATA[195]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1283826001]]></mch_id>
+<nonce_str><![CDATA[bqfozw8w58vdqk590qzlgi06s907ji2m]]></nonce_str>
+<openid><![CDATA[o7V1swWoasugawquEWovrfBsB_O0]]></openid>
+<out_trade_no><![CDATA[2016010758284]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[84CBEA516E2EE222DCC19E84FE90BABC]]></sign>
+<time_end><![CDATA[20160107121119]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[NATIVE]]></trade_type>
+<transaction_id><![CDATA[1004370668201601072555716305]]></transaction_id>
+</xml>'
+
+
+-----------2016-01-07 12:11:17-----------------支付成功
+
+
+
+-----------2016-01-07 12:11:17-----------------订单金额0.01
+
+
+
+-----------2016-01-07 12:11:28-----------------传递过来的XML
+'<xml><appid><![CDATA[wx7185301381c3c8d0]]></appid>
+<attach><![CDATA[195]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1283826001]]></mch_id>
+<nonce_str><![CDATA[bqfozw8w58vdqk590qzlgi06s907ji2m]]></nonce_str>
+<openid><![CDATA[o7V1swWoasugawquEWovrfBsB_O0]]></openid>
+<out_trade_no><![CDATA[2016010758284]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[84CBEA516E2EE222DCC19E84FE90BABC]]></sign>
+<time_end><![CDATA[20160107121119]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[NATIVE]]></trade_type>
+<transaction_id><![CDATA[1004370668201601072555716305]]></transaction_id>
+</xml>'
+
+
+-----------2016-01-07 12:11:28-----------------支付成功
+
+
+
+-----------2016-01-07 12:11:28-----------------订单金额0.01
+
+
+
+-----------2016-01-07 12:11:47-----------------传递过来的XML
+'<xml><appid><![CDATA[wx7185301381c3c8d0]]></appid>
+<attach><![CDATA[195]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1283826001]]></mch_id>
+<nonce_str><![CDATA[bqfozw8w58vdqk590qzlgi06s907ji2m]]></nonce_str>
+<openid><![CDATA[o7V1swWoasugawquEWovrfBsB_O0]]></openid>
+<out_trade_no><![CDATA[2016010758284]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[84CBEA516E2EE222DCC19E84FE90BABC]]></sign>
+<time_end><![CDATA[20160107121119]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[NATIVE]]></trade_type>
+<transaction_id><![CDATA[1004370668201601072555716305]]></transaction_id>
+</xml>'
+
+
+-----------2016-01-07 12:11:47-----------------支付成功
+
+
+
+-----------2016-01-07 12:11:47-----------------订单金额0.01
+
+
+
+-----------2016-01-07 12:12:22-----------------传递过来的XML
+'<xml><appid><![CDATA[wx7185301381c3c8d0]]></appid>
+<attach><![CDATA[195]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1283826001]]></mch_id>
+<nonce_str><![CDATA[bqfozw8w58vdqk590qzlgi06s907ji2m]]></nonce_str>
+<openid><![CDATA[o7V1swWoasugawquEWovrfBsB_O0]]></openid>
+<out_trade_no><![CDATA[2016010758284]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[84CBEA516E2EE222DCC19E84FE90BABC]]></sign>
+<time_end><![CDATA[20160107121119]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[NATIVE]]></trade_type>
+<transaction_id><![CDATA[1004370668201601072555716305]]></transaction_id>
+</xml>'
+
+
+-----------2016-01-07 12:12:22-----------------支付成功
+
+
+
+-----------2016-01-07 12:12:22-----------------订单金额0.01
+
+
+
+-----------2016-01-07 12:15:22-----------------传递过来的XML
+'<xml><appid><![CDATA[wx7185301381c3c8d0]]></appid>
+<attach><![CDATA[195]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1283826001]]></mch_id>
+<nonce_str><![CDATA[bqfozw8w58vdqk590qzlgi06s907ji2m]]></nonce_str>
+<openid><![CDATA[o7V1swWoasugawquEWovrfBsB_O0]]></openid>
+<out_trade_no><![CDATA[2016010758284]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[84CBEA516E2EE222DCC19E84FE90BABC]]></sign>
+<time_end><![CDATA[20160107121119]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[NATIVE]]></trade_type>
+<transaction_id><![CDATA[1004370668201601072555716305]]></transaction_id>
+</xml>'
+
+
+-----------2016-01-07 12:15:22-----------------支付成功
+
+
+
+-----------2016-01-07 12:15:22-----------------订单金额0.01
+
+
+
+-----------2016-01-07 12:45:25-----------------传递过来的XML
+'<xml><appid><![CDATA[wx7185301381c3c8d0]]></appid>
+<attach><![CDATA[195]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1283826001]]></mch_id>
+<nonce_str><![CDATA[bqfozw8w58vdqk590qzlgi06s907ji2m]]></nonce_str>
+<openid><![CDATA[o7V1swWoasugawquEWovrfBsB_O0]]></openid>
+<out_trade_no><![CDATA[2016010758284]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[84CBEA516E2EE222DCC19E84FE90BABC]]></sign>
+<time_end><![CDATA[20160107121119]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[NATIVE]]></trade_type>
+<transaction_id><![CDATA[1004370668201601072555716305]]></transaction_id>
+</xml>'
+
+
+-----------2016-01-07 12:45:25-----------------支付成功
+
+
+
+-----------2016-01-07 12:45:25-----------------订单金额0.01
+
+
+
+-----------2016-01-07 13:15:29-----------------传递过来的XML
+'<xml><appid><![CDATA[wx7185301381c3c8d0]]></appid>
+<attach><![CDATA[195]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1283826001]]></mch_id>
+<nonce_str><![CDATA[bqfozw8w58vdqk590qzlgi06s907ji2m]]></nonce_str>
+<openid><![CDATA[o7V1swWoasugawquEWovrfBsB_O0]]></openid>
+<out_trade_no><![CDATA[2016010758284]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[84CBEA516E2EE222DCC19E84FE90BABC]]></sign>
+<time_end><![CDATA[20160107121119]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[NATIVE]]></trade_type>
+<transaction_id><![CDATA[1004370668201601072555716305]]></transaction_id>
+</xml>'
+
+
+-----------2016-01-07 13:15:29-----------------支付成功
+
+
+
+-----------2016-01-07 13:15:29-----------------订单金额0.01
+
+
+
+-----------2016-01-07 13:45:31-----------------传递过来的XML
+'<xml><appid><![CDATA[wx7185301381c3c8d0]]></appid>
+<attach><![CDATA[195]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1283826001]]></mch_id>
+<nonce_str><![CDATA[bqfozw8w58vdqk590qzlgi06s907ji2m]]></nonce_str>
+<openid><![CDATA[o7V1swWoasugawquEWovrfBsB_O0]]></openid>
+<out_trade_no><![CDATA[2016010758284]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[84CBEA516E2EE222DCC19E84FE90BABC]]></sign>
+<time_end><![CDATA[20160107121119]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[NATIVE]]></trade_type>
+<transaction_id><![CDATA[1004370668201601072555716305]]></transaction_id>
+</xml>'
+
+
+-----------2016-01-07 13:45:31-----------------支付成功
+
+
+
+-----------2016-01-07 13:45:31-----------------订单金额0.01
+
+
+
+-----------2016-01-07 14:15:56-----------------传递过来的XML
+'<xml><appid><![CDATA[wx7185301381c3c8d0]]></appid>
+<attach><![CDATA[195]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1283826001]]></mch_id>
+<nonce_str><![CDATA[bqfozw8w58vdqk590qzlgi06s907ji2m]]></nonce_str>
+<openid><![CDATA[o7V1swWoasugawquEWovrfBsB_O0]]></openid>
+<out_trade_no><![CDATA[2016010758284]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[84CBEA516E2EE222DCC19E84FE90BABC]]></sign>
+<time_end><![CDATA[20160107121119]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[NATIVE]]></trade_type>
+<transaction_id><![CDATA[1004370668201601072555716305]]></transaction_id>
+</xml>'
+
+
+-----------2016-01-07 14:15:56-----------------支付成功
+
+
+
+-----------2016-01-07 14:15:56-----------------订单金额0.01
+
+
+
+-----------2016-01-07 15:15:41-----------------传递过来的XML
+'<xml><appid><![CDATA[wx7185301381c3c8d0]]></appid>
+<attach><![CDATA[195]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1283826001]]></mch_id>
+<nonce_str><![CDATA[bqfozw8w58vdqk590qzlgi06s907ji2m]]></nonce_str>
+<openid><![CDATA[o7V1swWoasugawquEWovrfBsB_O0]]></openid>
+<out_trade_no><![CDATA[2016010758284]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[84CBEA516E2EE222DCC19E84FE90BABC]]></sign>
+<time_end><![CDATA[20160107121119]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[NATIVE]]></trade_type>
+<transaction_id><![CDATA[1004370668201601072555716305]]></transaction_id>
+</xml>'
+
+
+-----------2016-01-07 15:15:41-----------------支付成功
+
+
+
+-----------2016-01-07 15:15:42-----------------订单金额0.01
+
+
+
+-----------2016-01-08 18:12:10-----------------传递过来的XML
+NULL
+
+
+-----------2016-01-08 18:12:10-----------------签名失败
+
+
+
+-----------2016-01-19 15:38:15-----------------传递过来的XML
+'<xml><appid><![CDATA[wx7185301381c3c8d0]]></appid>
+<attach><![CDATA[212]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1283826001]]></mch_id>
+<nonce_str><![CDATA[o7q134uu2i9jgx97f7hplga1na33emuh]]></nonce_str>
+<openid><![CDATA[o7V1swWoasugawquEWovrfBsB_O0]]></openid>
+<out_trade_no><![CDATA[2016011904989]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[CD87EBBFE0FA2C1289DC1ECBF59BB7AF]]></sign>
+<time_end><![CDATA[20160119153814]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[NATIVE]]></trade_type>
+<transaction_id><![CDATA[1004370668201601192784563429]]></transaction_id>
+</xml>'
+
+
+-----------2016-01-19 15:38:15-----------------支付成功
+
+
+
+-----------2016-01-19 15:38:15-----------------订单金额0.01
+
+
+
+-----------2016-01-19 15:38:28-----------------传递过来的XML
+'<xml><appid><![CDATA[wx7185301381c3c8d0]]></appid>
+<attach><![CDATA[212]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1283826001]]></mch_id>
+<nonce_str><![CDATA[o7q134uu2i9jgx97f7hplga1na33emuh]]></nonce_str>
+<openid><![CDATA[o7V1swWoasugawquEWovrfBsB_O0]]></openid>
+<out_trade_no><![CDATA[2016011904989]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[CD87EBBFE0FA2C1289DC1ECBF59BB7AF]]></sign>
+<time_end><![CDATA[20160119153814]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[NATIVE]]></trade_type>
+<transaction_id><![CDATA[1004370668201601192784563429]]></transaction_id>
+</xml>'
+
+
+-----------2016-01-19 15:38:28-----------------支付成功
+
+
+
+-----------2016-01-19 15:38:28-----------------订单金额0.01
+
+
+
+-----------2016-01-19 15:38:45-----------------传递过来的XML
+'<xml><appid><![CDATA[wx7185301381c3c8d0]]></appid>
+<attach><![CDATA[212]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1283826001]]></mch_id>
+<nonce_str><![CDATA[o7q134uu2i9jgx97f7hplga1na33emuh]]></nonce_str>
+<openid><![CDATA[o7V1swWoasugawquEWovrfBsB_O0]]></openid>
+<out_trade_no><![CDATA[2016011904989]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[CD87EBBFE0FA2C1289DC1ECBF59BB7AF]]></sign>
+<time_end><![CDATA[20160119153814]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[NATIVE]]></trade_type>
+<transaction_id><![CDATA[1004370668201601192784563429]]></transaction_id>
+</xml>'
+
+
+-----------2016-01-19 15:38:45-----------------支付成功
+
+
+
+-----------2016-01-19 15:38:45-----------------订单金额0.01
+
+
+
+-----------2016-01-19 15:39:18-----------------传递过来的XML
+'<xml><appid><![CDATA[wx7185301381c3c8d0]]></appid>
+<attach><![CDATA[212]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1283826001]]></mch_id>
+<nonce_str><![CDATA[o7q134uu2i9jgx97f7hplga1na33emuh]]></nonce_str>
+<openid><![CDATA[o7V1swWoasugawquEWovrfBsB_O0]]></openid>
+<out_trade_no><![CDATA[2016011904989]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[CD87EBBFE0FA2C1289DC1ECBF59BB7AF]]></sign>
+<time_end><![CDATA[20160119153814]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[NATIVE]]></trade_type>
+<transaction_id><![CDATA[1004370668201601192784563429]]></transaction_id>
+</xml>'
+
+
+-----------2016-01-19 15:39:18-----------------支付成功
+
+
+
+-----------2016-01-19 15:39:18-----------------订单金额0.01
+
+
+
+-----------2016-01-19 15:42:19-----------------传递过来的XML
+'<xml><appid><![CDATA[wx7185301381c3c8d0]]></appid>
+<attach><![CDATA[212]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1283826001]]></mch_id>
+<nonce_str><![CDATA[o7q134uu2i9jgx97f7hplga1na33emuh]]></nonce_str>
+<openid><![CDATA[o7V1swWoasugawquEWovrfBsB_O0]]></openid>
+<out_trade_no><![CDATA[2016011904989]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[CD87EBBFE0FA2C1289DC1ECBF59BB7AF]]></sign>
+<time_end><![CDATA[20160119153814]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[NATIVE]]></trade_type>
+<transaction_id><![CDATA[1004370668201601192784563429]]></transaction_id>
+</xml>'
+
+
+-----------2016-01-19 15:42:19-----------------支付成功
+
+
+
+-----------2016-01-19 15:42:19-----------------订单金额0.01
+
+
+
+-----------2016-01-19 16:12:22-----------------传递过来的XML
+'<xml><appid><![CDATA[wx7185301381c3c8d0]]></appid>
+<attach><![CDATA[212]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1283826001]]></mch_id>
+<nonce_str><![CDATA[o7q134uu2i9jgx97f7hplga1na33emuh]]></nonce_str>
+<openid><![CDATA[o7V1swWoasugawquEWovrfBsB_O0]]></openid>
+<out_trade_no><![CDATA[2016011904989]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[CD87EBBFE0FA2C1289DC1ECBF59BB7AF]]></sign>
+<time_end><![CDATA[20160119153814]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[NATIVE]]></trade_type>
+<transaction_id><![CDATA[1004370668201601192784563429]]></transaction_id>
+</xml>'
+
+
+-----------2016-01-19 16:12:22-----------------支付成功
+
+
+
+-----------2016-01-19 16:12:22-----------------订单金额0.01
+
+
+
+-----------2016-01-19 16:42:24-----------------传递过来的XML
+'<xml><appid><![CDATA[wx7185301381c3c8d0]]></appid>
+<attach><![CDATA[212]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1283826001]]></mch_id>
+<nonce_str><![CDATA[o7q134uu2i9jgx97f7hplga1na33emuh]]></nonce_str>
+<openid><![CDATA[o7V1swWoasugawquEWovrfBsB_O0]]></openid>
+<out_trade_no><![CDATA[2016011904989]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[CD87EBBFE0FA2C1289DC1ECBF59BB7AF]]></sign>
+<time_end><![CDATA[20160119153814]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[NATIVE]]></trade_type>
+<transaction_id><![CDATA[1004370668201601192784563429]]></transaction_id>
+</xml>'
+
+
+-----------2016-01-19 16:42:24-----------------支付成功
+
+
+
+-----------2016-01-19 16:42:24-----------------订单金额0.01
+
+
+
+-----------2016-01-19 17:12:27-----------------传递过来的XML
+'<xml><appid><![CDATA[wx7185301381c3c8d0]]></appid>
+<attach><![CDATA[212]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1283826001]]></mch_id>
+<nonce_str><![CDATA[o7q134uu2i9jgx97f7hplga1na33emuh]]></nonce_str>
+<openid><![CDATA[o7V1swWoasugawquEWovrfBsB_O0]]></openid>
+<out_trade_no><![CDATA[2016011904989]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[CD87EBBFE0FA2C1289DC1ECBF59BB7AF]]></sign>
+<time_end><![CDATA[20160119153814]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[NATIVE]]></trade_type>
+<transaction_id><![CDATA[1004370668201601192784563429]]></transaction_id>
+</xml>'
+
+
+-----------2016-01-19 17:12:27-----------------支付成功
+
+
+
+-----------2016-01-19 17:12:27-----------------订单金额0.01
+
+
+
+-----------2016-01-19 17:42:28-----------------传递过来的XML
+'<xml><appid><![CDATA[wx7185301381c3c8d0]]></appid>
+<attach><![CDATA[212]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1283826001]]></mch_id>
+<nonce_str><![CDATA[o7q134uu2i9jgx97f7hplga1na33emuh]]></nonce_str>
+<openid><![CDATA[o7V1swWoasugawquEWovrfBsB_O0]]></openid>
+<out_trade_no><![CDATA[2016011904989]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[CD87EBBFE0FA2C1289DC1ECBF59BB7AF]]></sign>
+<time_end><![CDATA[20160119153814]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[NATIVE]]></trade_type>
+<transaction_id><![CDATA[1004370668201601192784563429]]></transaction_id>
+</xml>'
+
+
+-----------2016-01-19 17:42:28-----------------支付成功
+
+
+
+-----------2016-01-19 17:42:28-----------------订单金额0.01
+
+
+
+-----------2016-01-19 18:42:32-----------------传递过来的XML
+'<xml><appid><![CDATA[wx7185301381c3c8d0]]></appid>
+<attach><![CDATA[212]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1283826001]]></mch_id>
+<nonce_str><![CDATA[o7q134uu2i9jgx97f7hplga1na33emuh]]></nonce_str>
+<openid><![CDATA[o7V1swWoasugawquEWovrfBsB_O0]]></openid>
+<out_trade_no><![CDATA[2016011904989]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[CD87EBBFE0FA2C1289DC1ECBF59BB7AF]]></sign>
+<time_end><![CDATA[20160119153814]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[NATIVE]]></trade_type>
+<transaction_id><![CDATA[1004370668201601192784563429]]></transaction_id>
+</xml>'
+
+
+-----------2016-01-19 18:42:32-----------------支付成功
+
+
+
+-----------2016-01-19 18:42:32-----------------订单金额0.01
+
+
+
+-----------2016-01-20 13:48:03-----------------传递过来的XML
+NULL
+
+
+-----------2016-01-20 13:48:03-----------------签名失败
+
+
+
+-----------2016-01-20 16:33:16-----------------传递过来的XML
+'<xml><appid><![CDATA[wx7185301381c3c8d0]]></appid>
+<attach><![CDATA[222]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1283826001]]></mch_id>
+<nonce_str><![CDATA[jkgu16s883n3fuq8rxwejq036wxc36r6]]></nonce_str>
+<openid><![CDATA[o7V1swWoasugawquEWovrfBsB_O0]]></openid>
+<out_trade_no><![CDATA[2016012001149]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[A0EB815D6015771AA070219F6C73CC63]]></sign>
+<time_end><![CDATA[20160120163321]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[NATIVE]]></trade_type>
+<transaction_id><![CDATA[1004370668201601202803770948]]></transaction_id>
+</xml>'
+
+
+-----------2016-01-20 16:33:17-----------------支付成功
+
+
+
+-----------2016-01-20 16:33:17-----------------订单金额0.01
+
+
+
+-----------2016-01-20 16:33:28-----------------传递过来的XML
+'<xml><appid><![CDATA[wx7185301381c3c8d0]]></appid>
+<attach><![CDATA[222]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1283826001]]></mch_id>
+<nonce_str><![CDATA[jkgu16s883n3fuq8rxwejq036wxc36r6]]></nonce_str>
+<openid><![CDATA[o7V1swWoasugawquEWovrfBsB_O0]]></openid>
+<out_trade_no><![CDATA[2016012001149]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[A0EB815D6015771AA070219F6C73CC63]]></sign>
+<time_end><![CDATA[20160120163321]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[NATIVE]]></trade_type>
+<transaction_id><![CDATA[1004370668201601202803770948]]></transaction_id>
+</xml>'
+
+
+-----------2016-01-20 16:33:28-----------------支付成功
+
+
+
+-----------2016-01-20 16:33:28-----------------订单金额0.01
+
+
+
+-----------2016-01-20 16:33:44-----------------传递过来的XML
+'<xml><appid><![CDATA[wx7185301381c3c8d0]]></appid>
+<attach><![CDATA[222]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1283826001]]></mch_id>
+<nonce_str><![CDATA[jkgu16s883n3fuq8rxwejq036wxc36r6]]></nonce_str>
+<openid><![CDATA[o7V1swWoasugawquEWovrfBsB_O0]]></openid>
+<out_trade_no><![CDATA[2016012001149]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[A0EB815D6015771AA070219F6C73CC63]]></sign>
+<time_end><![CDATA[20160120163321]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[NATIVE]]></trade_type>
+<transaction_id><![CDATA[1004370668201601202803770948]]></transaction_id>
+</xml>'
+
+
+-----------2016-01-20 16:33:44-----------------支付成功
+
+
+
+-----------2016-01-20 16:33:44-----------------订单金额0.01
+
+
+
+-----------2016-01-20 16:34:17-----------------传递过来的XML
+'<xml><appid><![CDATA[wx7185301381c3c8d0]]></appid>
+<attach><![CDATA[222]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1283826001]]></mch_id>
+<nonce_str><![CDATA[jkgu16s883n3fuq8rxwejq036wxc36r6]]></nonce_str>
+<openid><![CDATA[o7V1swWoasugawquEWovrfBsB_O0]]></openid>
+<out_trade_no><![CDATA[2016012001149]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[A0EB815D6015771AA070219F6C73CC63]]></sign>
+<time_end><![CDATA[20160120163321]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[NATIVE]]></trade_type>
+<transaction_id><![CDATA[1004370668201601202803770948]]></transaction_id>
+</xml>'
+
+
+-----------2016-01-20 16:34:17-----------------支付成功
+
+
+
+-----------2016-01-20 16:34:17-----------------订单金额0.01
+
+
+
+-----------2016-01-20 16:37:18-----------------传递过来的XML
+'<xml><appid><![CDATA[wx7185301381c3c8d0]]></appid>
+<attach><![CDATA[222]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1283826001]]></mch_id>
+<nonce_str><![CDATA[jkgu16s883n3fuq8rxwejq036wxc36r6]]></nonce_str>
+<openid><![CDATA[o7V1swWoasugawquEWovrfBsB_O0]]></openid>
+<out_trade_no><![CDATA[2016012001149]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[A0EB815D6015771AA070219F6C73CC63]]></sign>
+<time_end><![CDATA[20160120163321]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[NATIVE]]></trade_type>
+<transaction_id><![CDATA[1004370668201601202803770948]]></transaction_id>
+</xml>'
+
+
+-----------2016-01-20 16:37:18-----------------支付成功
+
+
+
+-----------2016-01-20 16:37:18-----------------订单金额0.01
+
+
+
+-----------2016-01-20 17:07:16-----------------传递过来的XML
+'<xml><appid><![CDATA[wx7185301381c3c8d0]]></appid>
+<attach><![CDATA[222]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1283826001]]></mch_id>
+<nonce_str><![CDATA[jkgu16s883n3fuq8rxwejq036wxc36r6]]></nonce_str>
+<openid><![CDATA[o7V1swWoasugawquEWovrfBsB_O0]]></openid>
+<out_trade_no><![CDATA[2016012001149]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[A0EB815D6015771AA070219F6C73CC63]]></sign>
+<time_end><![CDATA[20160120163321]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[NATIVE]]></trade_type>
+<transaction_id><![CDATA[1004370668201601202803770948]]></transaction_id>
+</xml>'
+
+
+-----------2016-01-20 17:07:16-----------------支付成功
+
+
+
+-----------2016-01-20 17:07:16-----------------订单金额0.01
+
+
+
+-----------2016-01-20 17:37:11-----------------传递过来的XML
+'<xml><appid><![CDATA[wx7185301381c3c8d0]]></appid>
+<attach><![CDATA[222]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1283826001]]></mch_id>
+<nonce_str><![CDATA[jkgu16s883n3fuq8rxwejq036wxc36r6]]></nonce_str>
+<openid><![CDATA[o7V1swWoasugawquEWovrfBsB_O0]]></openid>
+<out_trade_no><![CDATA[2016012001149]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[A0EB815D6015771AA070219F6C73CC63]]></sign>
+<time_end><![CDATA[20160120163321]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[NATIVE]]></trade_type>
+<transaction_id><![CDATA[1004370668201601202803770948]]></transaction_id>
+</xml>'
+
+
+-----------2016-01-20 17:37:11-----------------支付成功
+
+
+
+-----------2016-01-20 17:37:11-----------------订单金额0.01
+
+
+
+-----------2016-01-20 18:07:08-----------------传递过来的XML
+'<xml><appid><![CDATA[wx7185301381c3c8d0]]></appid>
+<attach><![CDATA[222]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1283826001]]></mch_id>
+<nonce_str><![CDATA[jkgu16s883n3fuq8rxwejq036wxc36r6]]></nonce_str>
+<openid><![CDATA[o7V1swWoasugawquEWovrfBsB_O0]]></openid>
+<out_trade_no><![CDATA[2016012001149]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[A0EB815D6015771AA070219F6C73CC63]]></sign>
+<time_end><![CDATA[20160120163321]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[NATIVE]]></trade_type>
+<transaction_id><![CDATA[1004370668201601202803770948]]></transaction_id>
+</xml>'
+
+
+-----------2016-01-20 18:07:08-----------------支付成功
+
+
+
+-----------2016-01-20 18:07:08-----------------订单金额0.01
+
+
+
+-----------2016-01-20 18:37:05-----------------传递过来的XML
+'<xml><appid><![CDATA[wx7185301381c3c8d0]]></appid>
+<attach><![CDATA[222]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1283826001]]></mch_id>
+<nonce_str><![CDATA[jkgu16s883n3fuq8rxwejq036wxc36r6]]></nonce_str>
+<openid><![CDATA[o7V1swWoasugawquEWovrfBsB_O0]]></openid>
+<out_trade_no><![CDATA[2016012001149]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[A0EB815D6015771AA070219F6C73CC63]]></sign>
+<time_end><![CDATA[20160120163321]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[NATIVE]]></trade_type>
+<transaction_id><![CDATA[1004370668201601202803770948]]></transaction_id>
+</xml>'
+
+
+-----------2016-01-20 18:37:05-----------------支付成功
+
+
+
+-----------2016-01-20 18:37:05-----------------订单金额0.01
+
+
+
+-----------2016-01-20 19:36:55-----------------传递过来的XML
+'<xml><appid><![CDATA[wx7185301381c3c8d0]]></appid>
+<attach><![CDATA[222]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1283826001]]></mch_id>
+<nonce_str><![CDATA[jkgu16s883n3fuq8rxwejq036wxc36r6]]></nonce_str>
+<openid><![CDATA[o7V1swWoasugawquEWovrfBsB_O0]]></openid>
+<out_trade_no><![CDATA[2016012001149]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[A0EB815D6015771AA070219F6C73CC63]]></sign>
+<time_end><![CDATA[20160120163321]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[NATIVE]]></trade_type>
+<transaction_id><![CDATA[1004370668201601202803770948]]></transaction_id>
+</xml>'
+
+
+-----------2016-01-20 19:36:55-----------------支付成功
+
+
+
+-----------2016-01-20 19:36:55-----------------订单金额0.01
+
+
+
+-----------2016-01-21 15:12:22-----------------传递过来的XML
+NULL
+
+
+-----------2016-01-21 15:12:22-----------------签名失败
+
+
+
+-----------2016-01-21 15:15:06-----------------传递过来的XML
+'<xml><appid><![CDATA[wx7185301381c3c8d0]]></appid>
+<attach><![CDATA[228]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1283826001]]></mch_id>
+<nonce_str><![CDATA[rcn4o4gwkusr1tlmxdnvbziq1lsqk62j]]></nonce_str>
+<openid><![CDATA[o7V1swWoasugawquEWovrfBsB_O0]]></openid>
+<out_trade_no><![CDATA[2016012136874]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[1BB9AA5B4540E5E114F16960C001452B]]></sign>
+<time_end><![CDATA[20160121151505]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[NATIVE]]></trade_type>
+<transaction_id><![CDATA[1004370668201601212821073660]]></transaction_id>
+</xml>'
+
+
+-----------2016-01-21 15:15:06-----------------支付成功
+
+
+
+-----------2016-01-21 15:15:06-----------------订单金额0.01
+
+
+
+-----------2016-01-21 15:15:16-----------------传递过来的XML
+'<xml><appid><![CDATA[wx7185301381c3c8d0]]></appid>
+<attach><![CDATA[228]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1283826001]]></mch_id>
+<nonce_str><![CDATA[rcn4o4gwkusr1tlmxdnvbziq1lsqk62j]]></nonce_str>
+<openid><![CDATA[o7V1swWoasugawquEWovrfBsB_O0]]></openid>
+<out_trade_no><![CDATA[2016012136874]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[1BB9AA5B4540E5E114F16960C001452B]]></sign>
+<time_end><![CDATA[20160121151505]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[NATIVE]]></trade_type>
+<transaction_id><![CDATA[1004370668201601212821073660]]></transaction_id>
+</xml>'
+
+
+-----------2016-01-21 15:15:16-----------------支付成功
+
+
+
+-----------2016-01-21 15:15:16-----------------订单金额0.01
+
+
+
+-----------2016-01-21 15:15:32-----------------传递过来的XML
+'<xml><appid><![CDATA[wx7185301381c3c8d0]]></appid>
+<attach><![CDATA[228]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1283826001]]></mch_id>
+<nonce_str><![CDATA[rcn4o4gwkusr1tlmxdnvbziq1lsqk62j]]></nonce_str>
+<openid><![CDATA[o7V1swWoasugawquEWovrfBsB_O0]]></openid>
+<out_trade_no><![CDATA[2016012136874]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[1BB9AA5B4540E5E114F16960C001452B]]></sign>
+<time_end><![CDATA[20160121151505]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[NATIVE]]></trade_type>
+<transaction_id><![CDATA[1004370668201601212821073660]]></transaction_id>
+</xml>'
+
+
+-----------2016-01-21 15:15:32-----------------支付成功
+
+
+
+-----------2016-01-21 15:15:32-----------------订单金额0.01
+
+
+
+-----------2016-01-21 15:16:04-----------------传递过来的XML
+'<xml><appid><![CDATA[wx7185301381c3c8d0]]></appid>
+<attach><![CDATA[228]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1283826001]]></mch_id>
+<nonce_str><![CDATA[rcn4o4gwkusr1tlmxdnvbziq1lsqk62j]]></nonce_str>
+<openid><![CDATA[o7V1swWoasugawquEWovrfBsB_O0]]></openid>
+<out_trade_no><![CDATA[2016012136874]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[1BB9AA5B4540E5E114F16960C001452B]]></sign>
+<time_end><![CDATA[20160121151505]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[NATIVE]]></trade_type>
+<transaction_id><![CDATA[1004370668201601212821073660]]></transaction_id>
+</xml>'
+
+
+-----------2016-01-21 15:16:04-----------------支付成功
+
+
+
+-----------2016-01-21 15:16:04-----------------订单金额0.01
+
+
+
+-----------2016-01-21 15:19:05-----------------传递过来的XML
+'<xml><appid><![CDATA[wx7185301381c3c8d0]]></appid>
+<attach><![CDATA[228]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1283826001]]></mch_id>
+<nonce_str><![CDATA[rcn4o4gwkusr1tlmxdnvbziq1lsqk62j]]></nonce_str>
+<openid><![CDATA[o7V1swWoasugawquEWovrfBsB_O0]]></openid>
+<out_trade_no><![CDATA[2016012136874]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[1BB9AA5B4540E5E114F16960C001452B]]></sign>
+<time_end><![CDATA[20160121151505]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[NATIVE]]></trade_type>
+<transaction_id><![CDATA[1004370668201601212821073660]]></transaction_id>
+</xml>'
+
+
+-----------2016-01-21 15:19:05-----------------支付成功
+
+
+
+-----------2016-01-21 15:19:05-----------------订单金额0.01
+
+
+
+-----------2016-01-21 15:49:08-----------------传递过来的XML
+'<xml><appid><![CDATA[wx7185301381c3c8d0]]></appid>
+<attach><![CDATA[228]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1283826001]]></mch_id>
+<nonce_str><![CDATA[rcn4o4gwkusr1tlmxdnvbziq1lsqk62j]]></nonce_str>
+<openid><![CDATA[o7V1swWoasugawquEWovrfBsB_O0]]></openid>
+<out_trade_no><![CDATA[2016012136874]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[1BB9AA5B4540E5E114F16960C001452B]]></sign>
+<time_end><![CDATA[20160121151505]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[NATIVE]]></trade_type>
+<transaction_id><![CDATA[1004370668201601212821073660]]></transaction_id>
+</xml>'
+
+
+-----------2016-01-21 15:49:08-----------------支付成功
+
+
+
+-----------2016-01-21 15:49:08-----------------订单金额0.01
+
+
+
+-----------2016-01-21 16:19:10-----------------传递过来的XML
+'<xml><appid><![CDATA[wx7185301381c3c8d0]]></appid>
+<attach><![CDATA[228]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1283826001]]></mch_id>
+<nonce_str><![CDATA[rcn4o4gwkusr1tlmxdnvbziq1lsqk62j]]></nonce_str>
+<openid><![CDATA[o7V1swWoasugawquEWovrfBsB_O0]]></openid>
+<out_trade_no><![CDATA[2016012136874]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[1BB9AA5B4540E5E114F16960C001452B]]></sign>
+<time_end><![CDATA[20160121151505]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[NATIVE]]></trade_type>
+<transaction_id><![CDATA[1004370668201601212821073660]]></transaction_id>
+</xml>'
+
+
+-----------2016-01-21 16:19:10-----------------支付成功
+
+
+
+-----------2016-01-21 16:19:10-----------------订单金额0.01
+
+
+
+-----------2016-01-21 16:49:12-----------------传递过来的XML
+'<xml><appid><![CDATA[wx7185301381c3c8d0]]></appid>
+<attach><![CDATA[228]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1283826001]]></mch_id>
+<nonce_str><![CDATA[rcn4o4gwkusr1tlmxdnvbziq1lsqk62j]]></nonce_str>
+<openid><![CDATA[o7V1swWoasugawquEWovrfBsB_O0]]></openid>
+<out_trade_no><![CDATA[2016012136874]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[1BB9AA5B4540E5E114F16960C001452B]]></sign>
+<time_end><![CDATA[20160121151505]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[NATIVE]]></trade_type>
+<transaction_id><![CDATA[1004370668201601212821073660]]></transaction_id>
+</xml>'
+
+
+-----------2016-01-21 16:49:12-----------------支付成功
+
+
+
+-----------2016-01-21 16:49:12-----------------订单金额0.01
+
+
+
+-----------2016-01-21 17:19:15-----------------传递过来的XML
+'<xml><appid><![CDATA[wx7185301381c3c8d0]]></appid>
+<attach><![CDATA[228]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1283826001]]></mch_id>
+<nonce_str><![CDATA[rcn4o4gwkusr1tlmxdnvbziq1lsqk62j]]></nonce_str>
+<openid><![CDATA[o7V1swWoasugawquEWovrfBsB_O0]]></openid>
+<out_trade_no><![CDATA[2016012136874]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[1BB9AA5B4540E5E114F16960C001452B]]></sign>
+<time_end><![CDATA[20160121151505]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[NATIVE]]></trade_type>
+<transaction_id><![CDATA[1004370668201601212821073660]]></transaction_id>
+</xml>'
+
+
+-----------2016-01-21 17:19:15-----------------支付成功
+
+
+
+-----------2016-01-21 17:19:15-----------------订单金额0.01
+
+
+
+-----------2016-01-21 18:19:19-----------------传递过来的XML
+'<xml><appid><![CDATA[wx7185301381c3c8d0]]></appid>
+<attach><![CDATA[228]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1283826001]]></mch_id>
+<nonce_str><![CDATA[rcn4o4gwkusr1tlmxdnvbziq1lsqk62j]]></nonce_str>
+<openid><![CDATA[o7V1swWoasugawquEWovrfBsB_O0]]></openid>
+<out_trade_no><![CDATA[2016012136874]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[1BB9AA5B4540E5E114F16960C001452B]]></sign>
+<time_end><![CDATA[20160121151505]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[NATIVE]]></trade_type>
+<transaction_id><![CDATA[1004370668201601212821073660]]></transaction_id>
+</xml>'
+
+
+-----------2016-01-21 18:19:19-----------------支付成功
+
+
+
+-----------2016-01-21 18:19:19-----------------订单金额0.01
+
+
+

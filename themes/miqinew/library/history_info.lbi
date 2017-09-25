@@ -1,0 +1,42 @@
+<link href="themes/miqinew/css/user.css" type="text/css" rel="stylesheet" />
+<!--{foreach from=$history_goods item=goods}-->
+
+					<li>
+						<div class="pic"><a href="{$goods.url}"><img src="{$goods.goods_thumb}" width="185" height="160"></a></div>
+						<div class="wz">
+                          <div class="jg">
+                                <span>{$goods.shop_price}</span>
+                            	<s>{$goods.market_price}</s>
+                            </div>
+                        	<div class="tit"><a href="detail.php">{$goods.short_name}</a></div>
+                            <div class="an">
+                            	<a class="gwc" href="{$goods.url}"><img src="images/car.png">加入购物车</a>
+                            	<a class="ljgm" href="{$goods.url}">立即购买</a>
+                                <div class="clear"></div>
+                            </div>
+                            <!--<div class="yshp">
+                            	<div class="yshp_l">已售：<span>6828</span></div>
+                            	<div class="yshp_r">好评：<span>100%</span></div>
+                                <div class="clear"></div>
+                            </div>-->
+                      	</div>
+                        <div class="gx"><input name="" type="checkbox" value=""></div>
+					</li>
+
+<!--{/foreach}--> 
+<li>
+						<div class="pic"><a href="detail.php"><img src="images/pic07.jpg" width="185" height="160"></a></div>
+						<div class="wz">
+                          <div class="jg">
+                                <span>￥<font>58.00</font></span>
+                            	<s>￥90.00</s>
+                            </div>
+                        	<div class="tit"><a href="detail.php">RIO锐澳鸡尾酒 预调酒果酒朗姆伏特加 【洋酒 威士忌】芝华士</a></div>
+                            <div class="an">
+                            	<a class="gwc" href="#"><img src="images/car.png">加入购物车</a>
+                            	<a class="ljgm" href="detail.php">立即购买</a>
+                                <div class="clear"></div>
+                            </div>
+                      	</div>
+                        <div class="gx"><input name="" type="checkbox" value=""></div>
+					</li>

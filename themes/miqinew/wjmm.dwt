@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>忘记密码-秀当红酒商城</title>
+<link rel="icon" href="favicon.gif" type="image/gif" />
+<link href="themes/miqinew/css/common.css" type="text/css" rel="stylesheet" />
+<link href="themes/miqinew/css/style.css" type="text/css" rel="stylesheet" />
+<link href="themes/miqinew/css/login.css" type="text/css" rel="stylesheet" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+
+
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+<script type="text/javascript" src="js/nav.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+<script type="text/javascript" src="js/modal.js"></script>
+<style>
+#nav .mod_subcate{top:0;}
+</style>
+</head>
+
+<body>
+<!-- #BeginLibraryItem "/library/page_header_index.lbi" --><!-- #EndLibraryItem -->
+<!-- main -->
+
+<!--- login --->
+
+    <form action="user.php" method="post">
+
+<div class="login">
+    <div class="nld_findpwd_box">
+        <div class="nld_findpwd_steps">
+            <ul class="step_ul">
+                <li class="step step_hover" id="step_1">1、输入登录名</li>
+                <li class="step" id="step_2">2、重置密码</li>
+                <li class="step" id="step_3">3、密码修改成功</li>
+            </ul>
+        </div>
+        <div id="step_one" class="nld_register_form">
+                <div class="nld_form_box">
+                    <ul class="nld_findpwd_items">
+                        <li>
+                            <label>手机号</label>
+
+                            <input type="text" maxlength="18" name="mobile" id="mobile" class="register_input_01 round3">
+                            <span id="mobileTip" class="onShow">请输入你的账号，账号为手机号</span>
+                        </li>
+                        <li>
+                            <label>手机验证码</label>
+
+                            <input type="text" style="width:170px; display:inline; margin-right:8px;" id="phoneCode" name="phoneCode" class="register_input_01 round3">
+                            <input type="button" onclick="send_code(this)" class="nld_button_tel getMobileCode round3" value="点击获取" id="getPhoneCode">
+                            <span id="phoneCodeTip" class="onShow">请填写手机验证码</span>
+                        </li>
+                        <li>
+                            <label>验证码</label>
+
+                            <input type="text" style="width:100px" name="authCode" id="authCode" class="register_input_01 round3 fl">
+                            <img style="cursor:pointer;" onclick="javascript:this.src='/home/base/verify?'+new Date().getTime()" src="images/verify.png" alt="点击切换" class="verifyimg reloadverify nld_register_verifycode" id="imgverCode">
+
+							<a class="nld_refresh_code" onclick="javascript:document.getElementById('imgverCode').src='/home/base/verify?'+new Date().getTime();return false;" href="javascript:;">刷新</a>
+                            <span id="authCodeTip" class="onShow">请输入验证码</span>
+                        </li>
+                    </ul>
+                </div>
+</div>
+            <td><input type="hidden" name="act" value="get_passwd_question" />
+                <div class="next_prev_findpwd">
+                    <input name="submit" type="submit" class="gbtn round3" id="Submit1" value="下一步" onclick="window.location.href='wjmm2.dwt'">
+                </div>
+    </div>
+    <div class="clear"></div>
+</div>
+
+      </form>
+
+<!--- login end --->
+
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem --> 
+</body>
+</html>

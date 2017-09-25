@@ -1,0 +1,152 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<script>
+function show_box(this_obj,h)
+{
+  var child_obj = this_obj.parentNode.parentNode.childNodes;
+  for(i=0; i<child_obj.length; i++)
+  {
+    if(child_obj[i].className == "show_box")
+    {
+      if(child_obj[i].style.height != "auto")
+      {
+        child_obj[i].style.height="auto";
+        this_obj.innerText="收起";
+      }
+      else
+      {
+        child_obj[i].style.height=h+'px';
+        this_obj.innerText="展开";
+      }
+    }
+  }
+}
+</script>
+<div class="xxfl">
+<div class="div_1200" id="close_pro_nav">
+  <form action="" method="post" name="ddxuan" id="ddxuan"  class="ddxuan_1">
+  <script language="JavaScript">
+  function change()
+{
+  var ddxuan=document.getElementById("ddxuan");
+  if(ddxuan.className=="ddxuan_1"){
+  ddxuan.className="ddxuan_2"
+  }else{
+  ddxuan.className="ddxuan_1"
+  }
+}
+</script>
+  <div class="div_f2"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="80" align="left" nowrap><strong><span class="ar">{$name}
+      <!--三级分类 -->
+    </span></strong></td>
+    <td align="left" >{if $pin}<div class="sed2 f_xz">
+    {foreach from=$pin item=pinpai name=names}
+    <a href="#"  title="清除此项目"><!--多选效果,点击刷新属于该关键词的一行隐藏 -->{$pinpai}</a>
+    {/foreach}
+    </div>{/if}
+    {if $brand_name}<div class="sed1 f_xz"><a href="category.php?id={$cat_id}"  title="清除此项目">
+    <!--单选效果,点击刷新属于该关键词的一行隐藏 -->{$brand_name}</a></div>{/if}</td>
+    <td width="100" align="right"><div class="txt1"><a href="javascript:" onClick="change()" class="abk">开启多选模式</a></div><div class="txt2"><a href="javascript:" onClick="change()" class="abk">关闭多选模式</a></div></td>
+  </tr>
+</table>
+
+    
+  </div>
+  <div class="div_f3">
+    <table width="100%" border="0" cellspacing="0" cellpadding="6">
+        <tr>
+          <td width="70" align="right" valign="top" class="line1 txt_1p20">品牌：</td>
+         <!--程序员，这点小空格不能去掉的啊！为了不让一组词夸2行，我设了一组词不换行咯，项目后台动态,注意某行有项目被选择时该行'<tr>....</tr>'隐藏，这里为了做效果全显示了！,第一个label做了一个for=""，后面没做了，实际是要的--> <td class="line1">
+         <!--{foreach from=$brands item=brand name=names}-->
+         {if $smarty.foreach.names.iteration <2} 
+         <!--  -->
+         <a href="{$brand.url}" class="box1 ab" {if $brand.selected}style="color:red;"{/if}>{$brand.brand_name}</a>
+         
+         {/if}
+         <!--{/foreach}--> 
+              <!--{foreach from=$brands item=brand name=namess}-->
+              {if $smarty.foreach.namess.iteration >1} 
+        <a href="{$brand.url}" class="box1 ab" {if $brand.selected}style="color:red;"{/if}>{$brand.brand_name}</a> <label class="box2"><input class="aass" name="hy" type="checkbox" {if $brand.selected}checked{/if} value="{$brand.brand_name}" >{$brand.brand_name} </label>
+        {/if}
+        <!--{/foreach}--> 
+        </tr>
+ 
+        <tr>
+          <td width="70" align="right" valign="top" class="line1 txt_1p20">价格：</td> <!--程序员，这点小空格不能去掉的啊！为了不让一组词夸2行，我设了一组词不换行咯 -->     
+<td class="line1">
+<!--{if $price_grade.1}-->
+<!--{foreach from=$price_grade item=grade}-->
+<a href="{$grade.url}" class="box1 ab" {if $grade.selected}style="color:red;"{/if}>{$grade.price_range}</a> <label class="box2"  for="kc01"><input name="kc" type="checkbox" value="1"  id="kc01">{$grade.price_range}</label>
+<!--{/foreach}-->
+<!--{/if}-->
+</td>
+        </tr>
+        <!--{foreach from=$filter_attr_list item=filter_attr}-->
+        {if $filter_attr.filter_attr_name eq '原产地'}
+        <tr >
+          <td align="right" valign="top" class="line1 txt_1p20">{$filter_attr.filter_attr_name|escape:html}：</td>
+          <td class="line1">
+          <!--{foreach from=$filter_attr.attr_list item=attr}-->
+          <a href="{$attr.url}" class="box1 ab" {if $attr.selected} style="color:red;"{/if}>{$attr.attr_value}</a> <label class="box2"><input class="bb" name="dq"{if $attr.selected} checked{/if} type="checkbox" value="{$attr.attr_value}"> {$attr.attr_value}</label>
+          <!--{/foreach}-->
+        </td>           
+          </tr>
+        {/if}
+        <!--{/foreach}-->
+        <tr class="btn">
+          <td align="right" valign="top" class="txt_1p20">&nbsp;</td>
+          <td class="ab a20_2em_nowrap"><input name="tijiao" type="botton" onclick="chaxuns();" class="button2" id="tijiao" value="提交"> 
+  &nbsp; 
+  <input name="quxiao" type="reset" class="button2" id="quxiao" onClick="change()" value="取消"></td>
+  <script type="text/javascript">
+  function chaxuns(){
+  var aa = $('.bb');
+  var ss = '';
+  for(var i= 0;i<=aa.length-1;i++){
+    if(aa[i].checked == true){
+    ss += aa[i].value+',';
+    }
+  }
+  var bb = $('.aass');
+  var cc = '';
+  for(var i= 0;i<=bb.length-1;i++){
+    if(bb[i].checked == true){
+    cc += bb[i].value+',';
+    }
+  }
+  window.location.href="{$script_name}.php?category={$category}&display={$pager.display}&brand={$brand_id}&price_min={$price_min}&pin="+cc+"&shux="+ss+"&price_max={$price_max}&filter_attr={$filter_attr}&page={$pager.page}&sort=shop_price&order=<!-- {if $pager.sort == 'shop_price' && $pager.order == 'ASC'} -->DESC<!-- {else} -->ASC<!-- {/if} -->#goods_list";
+}
+  </script>
+        </tr>
+      </table>
+      <div class="clear"></div>
+  </div></form>
+  <div id="lyu_c_2" style="display:none">
+  <div class="div_f3">
+    <table width="100%" border="0" cellspacing="0" cellpadding="6">
+
+    <!--{foreach from=$filter_attr_list item=filter_attr}-->
+        <tr>
+          <td align="right" valign="top" class="line1 txt_1p20">{$filter_attr.filter_attr_name|escape:html}：</td>
+          <td class="line1 ab a20_2em_nowrap">
+          <!--{foreach from=$filter_attr.attr_list item=attr}-->
+
+              <a href="{$attr.url}" {if $attr.selected} style="color:red;"{/if}>{$attr.attr_value}</a> 
+      <!--{/foreach}-->
+        </tr>
+
+        <!--{/foreach}-->
+      </table>
+  </div>
+  <div class="clear"></div>
+  <div  class="div_f5" id="lyu_t_1" onClick="Tb(1, 2, 'lyu', '');" ><img src="images/div_f5_collapse.gif" width="1200" height="12" class="imgcss hand" title="收起"></div>
+         
+    </div>
+  
+    <div  class="div_f5" id="lyu_c_1"  style="display:"><div id="lyu_t_2" onClick="Tb(2, 2, 'lyu', '');" ><img src="images/div_f5_expand.gif" width="1200" height="12" class=" hand"  title="展开"></div></div>
+
+    <div class="clear"></div>    
+</div>
+</div>

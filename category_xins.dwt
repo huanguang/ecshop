@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>婚宴专区-秀当红酒商城</title>
+<link rel="icon" href="images/favicon.gif" type="image/gif" >
+<link href="css/common.css" type="text/css" rel="stylesheet" />
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+<link href="css/tuang.css" type="text/css" rel="stylesheet" />
+<link href="themes/miqinew/css/common.css" type="text/css" rel="stylesheet" />
+<link href="themes/miqinew/style.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+<script type="text/javascript" src="js/nav.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+<script type="text/javascript" src="js/modal.js"></script>
+<script language="JavaScript" type="text/javascript" src="js/common_1.js"></script>	
+<style>
+#nav .mod_subcate{top:0;}
+.page{margin-top:0px;margin-bottom:50px;}
+</style>
+</head>
+
+<body>
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+
+<!-- cur begin -->
+<div class="main_box jf_banner"><img src="data/afficheimg/{$ad_fen.ad_code}" width="100%"/></div>
+<!-- cur end -->
+<div class="blank50"></div>
+<!-- xxfl beign -->
+<!-- xxfl end -->
+
+<!-- 婚宴专区 -->
+<div class="main_box">
+{foreach from=$best_goods item=goods name= names}
+{if $smarty.foreach.names.iteration < '3'}
+<div class="hyzq_mxhj {if $smarty.foreach.names.iteration eq '1'}fl{/if}{if $smarty.foreach.names.iteration eq '2'}fr{/if}">
+	<div class="hyzq_mxhj_1 fl"><a href="{$goods.url}"><img src="{$goods.goods_img}" width="200" height="290" /></a><img class="img_1" src="images/ax1.png" width="160" height="114" /></div>
+	<div class="hyzq_mxhj_2 fr">
+		<h2>{$goods.name}</h2>
+		<h3><a href="{$goods.url}">{$goods.goods_brief}</a></h3>
+		<p class="p_1"><span>亮点：</span>{$goods.goods_liangdian}</p>
+		<p class="p_1"><span>建议：</span>{$goods.goods_jiany}</p>
+		<p class="p_2">价格：<span>{$goods.shop_price}</span></p>
+		<p class="p_3"><a href="goods.php?id={$goods.goods_id}">立即购买</a></p>
+	</div>
+	<div class="clear"></div>
+</div>
+{/if}
+{/foreach}
+
+
+<div class="clear"></div>
+</div>
+<div class="blank30"></div>
+<div style=" border-bottom:1px dashed #ccc; width:1200px; margin:0 auto"></div>
+<div class="blank20"></div>
+<div class="main_box">
+	<div class="hyzq_1">
+		<ul>
+		{if $goods_list}
+		{foreach from=$goods_list item=goods name=names}
+		{if $goods}
+        	<li {if $smarty.foreach.names.iteration%3 eq '0'}class="li_1"{/if}>
+            	<div class="hyzq_div">
+           	    <div class="hyzq_div1 fl">
+                    	<div class="hyzq_div1_img">
+                        	<a href="goods.php?id={$goods.goods_id}"><img class="fr" src="{$goods.goods_img}" width="130" height="245" /></a>
+                            <div class="hyzq_div1_dz">
+                            	{$goods.zhekou}
+                            </div>
+                          <div class="clear"></div>
+                        </div>
+                        <div class="hyzq_div2">
+                        	<p>已售出：&nbsp;<span>{$goods.yishou}</span>&nbsp;瓶</p>
+                        	<p>好评率：&nbsp;<span>{$goods.haopin}%</span></p>
+                        </div>    
+                  </div>
+                	<div class="hyzq_div1 hyzq_div3 fr">
+                    	<h2><a href="goods.php?id={$goods.goods_id}">{$goods.goods_name}<br />{$goods.goods_name_e}</a></h2>
+                        <p class="p_1">{$goods.goods_qitajie}&nbsp;</p>
+                        {foreach from=$goods.properties.pro['商品属性'] item=properties}
+                        {if $properties.name eq '单支' || $properties.name eq '一箱' || $properties.name eq '十箱' || $properties.name eq '评分'}
+                        <p class="p_2">{$properties.name}：<span>{$properties.value}</span></p>
+                        {/if}
+                        {/foreach}
+                        <p class="p_2"><a href="goods.php?id={$goods.goods_id}">立即购买</a></p>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </li>
+        {if $smarty.foreach.names.iteration%3 eq 0}
+        </ul>
+       <div class="clear"></div>
+       <div class="fgx"></div>
+       <ul>
+       {/if}
+            {/if}
+       
+		{/foreach}
+{/if}
+
+
+        <div class="blank20"></div>
+        <div style="height: 68px;
+    margin-left: 247px;">
+<!-- #BeginLibraryItem "/library/pages.lbi" --><!-- #EndLibraryItem -->
+</div>
+            </div>
+
+            <!--- 列表 --->
+<script>
+	function trc(n)
+	{
+		if(n==1){
+			document.getElementById('a_1_1').className = 'a1';
+			document.getElementById('a_1_2').className = '';
+			
+			document.getElementById('trc1').style.display = '';
+			document.getElementById('trc2').style.display = 'none';
+		}else if(n==2){
+			document.getElementById('a_1_1').className = '';
+			document.getElementById('a_1_2').className = 'a1';
+			
+			document.getElementById('trc1').style.display = 'none';
+			document.getElementById('trc2').style.display = '';
+		}
+	}
+	</script>            
+</div>
+<!--- 婚宴专区 end --->
+
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem --> 
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{$page_title}</title>
+<link rel="icon" href="images/favicon.gif" type="image/gif" >
+<link href="css/common.css" type="text/css" rel="stylesheet" />
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+<script type="text/javascript" src="js/nav.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+<script type="text/javascript" src="js/modal.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<link href="css/common.css" type="text/css" rel="stylesheet" />
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+<link href="css/tuang.css" type="text/css" rel="stylesheet" />
+<link href="themes/miqinew/css/common.css" type="text/css" rel="stylesheet" />
+<link href="themes/miqinew/style.css" type="text/css" rel="stylesheet" />
+<style>
+#nav .mod_subcate{top:0;}
+.page{margin-top:0;margin-bottom:20px;}
+</style>
+</head>
+
+<body>
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+
+<!-- article -->
+<div class="main_box culture">
+	<!-- 红酒知识 -->
+	<div class="hjzs1">
+    	<div class="tit">红酒知识</div>
+        <ul>
+        <!-- {foreach from=$class_articles item=class_articles} -->
+            <li>
+            <div class="con">
+                <div class="pic"><a href="culture_info.php?id={$class_articles.id}"><img src="{$class_articles.file_url}" width="200" height="120" /></a></div>
+                <div class="wz">
+                    <h3><a href="culture_info.php?id={$class_articles.id}">{$class_articles.title|truncate:13}</a></h3>
+                    <div class="js">{$class_articles.description|truncate:40}</div>
+                    <div class="more"><a href="culture_info.php?id={$class_articles.id}">查看详细>></a></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            </li>
+            <!-- {/foreach} -->
+        </ul>
+<div class="clear"></div>     
+    </div>
+    <!-- 红酒知识 end -->
+<div class="clear"></div> 
+<div style="height: 40px;
+    margin-left: 200px;">
+<!-- #BeginLibraryItem "/library/pages.lbi" --><!-- #EndLibraryItem --> 
+</div>  
+</div>
+<!--- culture end --->
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+</body>
+</html>

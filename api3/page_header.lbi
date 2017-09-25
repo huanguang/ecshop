@@ -1,0 +1,246 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.json-1.3.js"></script>
+<script type="text/javascript" src="js/common2.js"></script>
+<script type="text/javascript" src="js/transport2.js"></script>
+
+
+<script language="JavaScript" type="text/javascript">
+$(document).ready(function(){
+  
+  $('#locweb').mousemove(function(){
+  $('#top_web_sub').slideDown();
+  $('#top_web_nav').addClass('top_nav_web_2');
+  $('#top_web_nav').removeClass('top_nav_web_1');   
+  
+  });
+  
+
+  $('#locweb').mouseleave(function(){
+  $('#top_web_sub').slideUp("fast");
+  $('#top_web_nav').addClass('top_nav_web_1');
+  $('#top_web_nav').removeClass('top_nav_web_2'); 
+    
+  });
+  
+  
+  
+});
+
+</script>
+<script language="JavaScript" type="text/javascript">
+$(document).ready(function(){
+  
+  $('#top_pro_nav').mousemove(function(){
+  $(this).find('#top_pro_sub').slideDown();
+  $(this).addClass('top_nav_pro_2');
+  $(this).removeClass('top_nav_pro_1');   
+  
+  });
+  
+
+  $('#top_pro_nav').mouseleave(function(){
+  $(this).find('#top_pro_sub').slideUp("fast");
+  $(this).addClass('top_nav_pro_1');
+  $(this).removeClass('top_nav_pro_2'); 
+  
+  
+  });
+  
+});
+
+</script>
+<script language="JavaScript" type="text/javascript">
+$(document).ready(function(){
+  
+  $('#top_wap_nav').mousemove(function(){
+  $(this).find('#top_wap_sub').slideDown();
+  $(this).addClass('top_nav_wap_2');
+  $(this).removeClass('top_nav_wap_1');   
+  
+  });
+  
+
+  $('#top_wap_nav').mouseleave(function(){
+  $(this).find('#top_wap_sub').slideUp("fast");
+  $(this).addClass('top_nav_wap_1');
+  $(this).removeClass('top_nav_wap_2'); 
+  
+  
+  });
+  
+});
+
+</script>
+<script language="JavaScript" type="text/javascript">
+$(document).ready(function(){
+  
+  $('#top_help_nav').mousemove(function(){
+  $(this).find('#top_help_sub').slideDown();
+  $(this).addClass('top_nav_pro_2');
+  $(this).removeClass('top_nav_pro_1');   
+  
+  });
+  
+
+  $('#top_help_nav').mouseleave(function(){
+  $(this).find('#top_help_sub').slideUp("fast");
+  $(this).addClass('top_nav_pro_1');
+  $(this).removeClass('top_nav_pro_2'); 
+  
+  
+  });
+  
+});
+
+</script>
+<script>
+function MM_over(mmObj) {
+	var mSubObj = mmObj.getElementsByTagName("div")[0];
+	mSubObj.style.display = "block";
+}
+function MM_out(mmObj) {
+	var mSubObj = mmObj.getElementsByTagName("div")[0];
+	mSubObj.style.display = "none";
+	
+}
+</script>
+<style>
+.top1_nav222{line-height: 54px;
+margin: 0px 25px;
+padding: 0px;
+float: left;
+height: 50px; z-index:99999;}
+.qsr_bcm{ position:relative;}
+.qsr_bcm span a{ font-size:16px; line-height:50px; color:#fff; display:block; text-decoration:none;}
+.gdrxfxz{width:120px;display:none; overflow:hidden;background:#009ee5;position:absolute;left:-30px;top:50px;z-index:99999999;font-family:"Microsoft YaHei";}
+.gdrxfxz p{ padding:2px;font-family:"Microsoft YaHei";}
+.gdrxfxz p a{width:116px;height:40px; line-height:40px; display:block; color:#fff; font-size:16px;text-decoration:none;font-family:"Microsoft YaHei";}
+.gdrxfxz p a:hover{background:#2188D1; color:#fff;font-family:"Microsoft YaHei";}
+</style>
+
+
+<div class="top_wrap">
+  <div class="top1">
+  <table width="1024" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+     <td align="left" width="210" style="color:#999; font-family:'宋体';">您好，欢迎来到玉龙腾在线商城</td>
+    {insert_scripts files='utils.js'}
+    {insert name='member_info'}
+    <td width="480" nowrap="nowrap" class="agy1">
+      <div class="top_nav top_cart_icon" style="width:100px; ">
+        {insert name='cart_info'}
+      </div>
+
+      <div class="top_nav"><a href="user.php?act=order_list">我的订单</a></div>
+      <!-- {foreach name=nav_top_list from=$navigator_list.top item=nav} -->
+      <div class="top_nav top_nav_pro_1" id="top_pro_nav">
+        <a href="{$nav.url}">{$nav.name}</a>
+        <div  class="top_pro_sub" id="top_pro_sub">
+          <a href="article_cat.php?id=12">站内信息</a>
+          <a href="user.php?act=profile">会员信息</a>
+          <a href="user.php?act=order_list">订单管理</a>
+          <a href="user.php?act=collection_list">我的收藏</a>
+          <a href="user.php?act=account_log">资金管理</a>
+          <a href="user.php?act=bonus">我的红包</a>
+          <a href="user.php?act=comment_list">我的评论</a>
+        </div>
+      </div>
+      {/foreach}
+      <div class="top_nav top_club_icon"><a href="user.php">会员俱乐部</a></div>
+      <div class="top_nav top_nav_pro_1" id="top_help_nav"><a href="article_cat.php">客服服务</a>
+        <div  class="top_pro_sub" id="top_help_sub">
+        <!-- {foreach from=$helps item=help_cat} -->
+          <a href="{$help_cat.cat_id}">{$help_cat.cat_name}</a>
+        <!-- {/foreach} -->
+      </div>
+      </div>
+    </td>
+    </tr>
+</table>
+</div>
+  <table width="1024" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+      <td width="220" height="84" align="left" valign="top" class="agy"><a href="index.php"><img src="themes/miqinew/img/logo.gif" alt="玉龙腾在线商城" width="180" height="58" border="0"  title="玉龙腾在线商城"/></a></td>
+      <td width="140" align="left" valign="top" class="agy">
+      <div id="locweb"><div class="top_nav_web_1" id="top_web_nav"><b>语言</b> <img src="themes/miqinew/img/ico_languege_jt.png" width="15" height="9" style="vertical-align:0; margin-left:2px;">
+        <!--“分站”固定显示--></div>
+        <div  class="top_web_sub" id="top_web_sub">
+        <a href="index.php" class="loc_cur">中文</a>
+        <a href="index.php">英语</a><a href="http://win.qbt8.com/yilon_jp/">日语</a>
+        <a href="index.php">葡萄牙</a><a href="index.php">西班牙</a><a href="index.php">俄罗斯</a>
+        </div>
+     </div>全场免邮派送</td>
+      <td width="490" align="left" valign="top" class="agy">
+    <div class="top_search">
+      <form id="searchForm" name="searchForm" method="get" action="search.php" onSubmit="return checkSearchForm()"">
+          <input name="keywords" class="top_search_in" id="keyword" title="请输入关键词" onfocus="if (value =='请输入关键词'){value =''}" onblur="if (value ==''){value='请输入关键词'}"  value="" size="15" />
+          <div class="top_search_btn" title="搜索">
+            <input type="image" name="imageField" src="themes/miqinew/img/top_search_btn.gif" />
+          </div>
+      </form>
+    </div>
+    <script type="text/javascript">
+    {literal}
+    <!--
+    function checkSearchForm()
+    {
+        if(document.getElementById('keyword').value)
+        {
+            return true;
+        }
+        else
+        {
+            alert("{$lang.no_keywords}");
+            return false;
+        }
+
+    }
+    -->
+    {/literal}
+    </script>
+   <div class="clear"></div>
+   <div class="top_hot">
+   {if $searchkeywords}
+   {$lang.hot_search} ：
+   {foreach from=$searchkeywords item=val name=names}
+   <a href="search.php?keywords={$val|escape:url}">{$val}</a>{if !$smarty.foreach.names.last}&nbsp|&nbsp{/if}
+   {/foreach}
+   {/if}  
+   </div>   
+   </td>
+      <td align="right" valign="top" class="agy"><a href="flow.php" class="top_cart">我的购物车</a></td>
+    </tr>
+  </table>
+<div class="top_nav_wrap">
+<table width="1024" height="50" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="180" height="40" align="center" bgcolor="#2188D1" ><a href="category.php" class="aw16">全部商品分类</a></td>
+    <td>
+      <div {if $navigator_list.config.index eq 1} class="top0_nav"{/if} class="top0_nav"><a href="index.php">{$lang.home}</a></div>
+      
+      <!-- {foreach name=nav_middle_list from=$navigator_list.middle item=nav} -->
+	  {if $nav.name eq '新闻中心'}
+	  <div class="top1_nav222">
+      		<div class="qsr_bcm" onmouseover="MM_over(this)" onmouseout="MM_out(this)"><span><a href="{$nav.url}">{$nav.name}</a></span>
+            	<div class="gdrxfxz">
+					{foreach from=$fenlei item=navs}
+					<p><a href="article_cat.php?id={$navs.cat_id}">{$navs.cat_name}</a></p>
+					{/foreach}
+				</div>
+            </div>
+      </div>
+	  {/if}
+      <div class="top1_nav"><a href="{$nav.url}">{if $nav.name eq '新闻中心'}{else}{$nav.name}{/if}</a></div>
+      
+      <!-- {/foreach} -->
+      
+    </td>
+    </tr>
+</table>
+</div>
+</div>
+{insert_scripts files='jquery-1.9.1.min.js,jquery.json-1.3.js,common2.js,transport2.js,jquery.SuperSlide.js'}
+          {insert_scripts files='utils.js,ecmoban_common.js'} 
+

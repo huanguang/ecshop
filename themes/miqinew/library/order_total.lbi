@@ -1,0 +1,112 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+{insert_scripts files='transport.js,utils.js'}
+<!--- 收货时间 end --->
+
+<!--- 使用积分 --->
+
+<!--- 使用积分 end --->
+   
+<!--- 金额信息 --->
+<!-- {if $smarty.session.user_id > 0 and ($config.use_integral or $config.use_bonus)} -->
+<div class="order-summary">
+      <!--  预售 计算支付展现方式 begin -->
+            <div class="statistic">
+        <div class="lb">
+          <span><em class="ftx-01">{$total.real_goods_count}</em> 种商品，总商品金额：</span>
+          <em class="price" v="544.9">￥{$total.goods_price}</em>
+        </div>
+        <div class="lb">
+          <span>运费：</span>
+          <em class="price" v="0">{$total.shipping_fee}</em>
+        </div>
+        <div class="lb">
+          <span><input name="" type="checkbox" value="" style="margin-left:60px; float:left; margin-top:5px">运费险：</span>
+          <em class="price"><font color="#000000">{$total.shipping_insure}</font></em>
+        </div>
+        <div class="lb">
+          <span><a href="###" onclick="openShutManager(this,'box')"><input name="" type="checkbox" value="" style="margin-left:60px; float:left; margin-top:5px;"></a>使用秀当积分：</span><em class="price">-{$total.integral}</em>
+        </div>
+        <!-- {if $config.use_integral} 是否使用积分-->
+          <div id="box" style="display:none; width:50%; margin-left:55px; margin-bottom:10px; text-align:center; float:left" onmouseout="MM_out(this)">
+              <input name="integral" type="text" class="input" id="ECS_INTEGRAL" onblur="changeIntegral(this.value)" value="0" size="10">
+              {$lang.can_use_integral}:{$your_integral|default:0} {$points_name}，{$lang.noworder_can_integral}{$order_max_integral}  {$points_name} <span id="ECS_INTEGRAL_NOTICE" class="notice">
+              <span id="ECS_INTEGRAL_NOTICE" class="notice"></span>
+            </div>
+            {/if}
+        <div class="clear"></div>
+        <div class="lb">
+          <span><a href="###" onclick="openShutManager(this,'box1')"><input name="" type="checkbox" value="" style="margin-left:60px; float:left; margin-top:5px"></a>使用优惠券：</span><em class="price">-{$total.bonus}</em>
+        </div>
+          <div id="box1" style="display:none;width:50%; margin-left:50px; margin-bottom:10px; text-align:center; float:left" onmouseout="MM_out(this)">
+              <select name="bonus" onchange="changeBonus(this.value)" id="ECS_BONUS" style="border:1px solid #ccc;">
+                  <option value="0" {if $order.bonus_id eq 0}selected{/if}>{$lang.please_select}</option>
+                  <!-- {foreach from=$bonus_list item=bonus} -->
+                  <option value="{$bonus.bonus_id}" {if $order.bonus_id eq $bonus.bonus_id}selected{/if}>{$bonus.type_name}[{$bonus.bonus_money_formated}]</option>
+                  <!-- {/foreach} -->
+                </select>
+            </div>
+        <div class="clear"></div>
+        <div class="lb" style="display: none;">
+          <span>京东卡/E卡：</span><em class="price">-￥0.00</em>
+        </div>
+        <div class="lb" style="display: none;">
+          <span>京豆：</span><em class="price">-￥0.00</em>
+        </div>
+        <div class="lb" style="display: none;">
+          <span>余额：</span><em class="price">-￥0.00</em>
+        </div>
+        <div class="lb" style="display:none;">
+          <span>分期手续费(由分期银行收取)：</span><em class="price">￥0.00</em>
+        </div>
+        <div class="lb">
+          <span>应付总额：</span>
+          <em class="price">￥{$total.goods_price}</em>
+        </div>
+        <div class="lb">
+          <span style="color:#c81623">该单所获积分：</span>
+          <em class="price" style="color:#c81623">{$total.will_get_integral}</em>
+        </div>
+      </div>   
+      <div class="clear"></div>
+      </div>
+      <script type="text/javascript">
+//=点击展开关闭效果=
+function openShutManager(oSourceObj,oTargetObj,shutAble,oOpenTip,oShutTip){
+var sourceObj = typeof oSourceObj == "string" ? document.getElementById(oSourceObj) : oSourceObj;
+var targetObj = typeof oTargetObj == "string" ? document.getElementById(oTargetObj) : oTargetObj;
+var openTip = oOpenTip || "";
+var shutTip = oShutTip || "";
+if(targetObj.style.display!="none"){
+   if(shutAble) return;
+   targetObj.style.display="none";
+   if(openTip  &&  shutTip){
+    sourceObj.innerHTML = shutTip; 
+   }
+} else {
+   targetObj.style.display="block";
+   if(openTip  &&  shutTip){
+    sourceObj.innerHTML = openTip; 
+   }
+}
+}
+</script>
+    <script>
+function MM_over(mmObj) {
+  var mSubObj = mmObj.getElementsByTagName("div")[0];
+  mSubObj.style.display = "block";
+  mSubObj.style.backgroundColor = "#f60";
+}
+function MM_out(mmObj) {
+  var mSubObj = mmObj.getElementsByTagName("div")[0];
+  mSubObj.style.display = "none";
+  
+}
+</script>
+{/if}
+<!--- 提交 --->
+<div class="shtj">
+    <input type="submit" class="tj" value="提交订单" />
+    <input type="hidden" name="step" value="done">
+    <span class="total">应付总额：<strong>{$total.amount_formated}</strong></span>
+</div>
+<!--- 提交 end --->

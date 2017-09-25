@@ -1,0 +1,22 @@
+<div class="dongtai_l">
+<div id="questions" class="article_l">
+	<div class="tit">常见问题分类</div>
+	<ul>
+	<!--{if $helps}-->
+
+
+<!-- {foreach from=$helps item=help_cat name=cat key=key} -->
+		<li class="clearfix">
+			<h5><b class="UI-ask"></b>{$help_cat.cat_name}</h5>
+			<div class="foldContent">
+			<!-- {foreach from=$help_cat.article item=item} -->
+				<p><a href="{$item.url}">{$item.short_title}</a></p>
+				<!-- {/foreach} -->
+			</div>
+		</li>
+<!-- {/foreach} -->
+<!--{/if}-->
+		</ul>
+    <div class="clear"></div>
+</div>
+</div>

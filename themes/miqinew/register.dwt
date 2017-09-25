@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>注册-秀当红酒商城</title>
+<link rel="icon" href="favicon.gif" type="image/gif" />
+<link href="themes/miqinew/css/common.css" type="text/css" rel="stylesheet" />
+<link href="themes/miqinew/css/style.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+<script type="text/javascript" src="js/nav.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+<script type="text/javascript" src="js/modal.js"></script>
+<style>
+#nav .mod_subcate{top:0;}
+</style>
+</head>
+
+<body>
+<!-- #BeginLibraryItem "/library/page_header_index.lbi" --><!-- #EndLibraryItem -->
+
+<!--- login --->
+  <div class="div_1200_d" id="close_pro_nav">
+  <table width="1100" border="0" align="center" cellpadding="10" cellspacing="0" class="line3">
+    <tr>
+      <td align="left" bgcolor="#FFFFFF" class="agy20">用户注册</td>
+      <td align="right" bgcolor="#FFFFFF"><a href="login.php">已有秀当账号，立即登录！</a></td>
+      <td width="65" align="right" bgcolor="#FFFFFF"><a href="login.php"><img src="images/bnt_login2.gif" width="65" height="27" border="0"></a></td>
+    </tr>
+  </table>
+  <div class="blank36"></div>
+
+  <form action="user.php" method="post" name="formUser" id="formreg" onsubmit="return register();">
+
+  <table width="900"  border="0" align="center" cellpadding="5" cellspacing="3" bgcolor="#FFFFFF">
+
+    <tr>
+      <td width="80" align="left" class="abk14">用 户 名：</td>
+      <td width="300">
+      <input name="username"  type="text" size="25" id="username"  class="ina4_mem"/></td>
+      <td><!-- 填写正确显示<img src="images/dot_green.gif" width="16" height="16"> -->
+        <div class="f_error">请输入用户名(不能少于6个字符)</div><!--此处需要检测用户名是否重复，如果用户名重复就不能注册。--></td>
+    </tr>
+    <tr>
+      <td width="80" align="left" class="abk14">邮&nbsp;&nbsp;&nbsp;&nbsp;箱：</td>
+      <td width="300">
+      <input name="email" type="text" size="40" id="email"   class="ina4_mail" /></td>
+      <td><!-- 填写正确显示<img src="images/dot_green.gif" width="16" height="16"> -->
+        <div class="f_error">请输入您常用的电子邮箱</div></td>
+    </tr>
+    <tr>
+      <td width="80" align="left" class="abk14">密&nbsp;&nbsp; &nbsp;码：</td>
+      <td width="300">
+      <input name="password" type="password" class="ina4_pw" id="password1" size="25" /></td>
+      <td><!-- 填写正确显示<img src="images/dot_green.gif" width="16" height="16"> -->
+        <div class="f_error">6-18字符，可使用字母及数字的任意组合，不建议使用纯字母、纯数字</div></td>
+    </tr>
+
+    <tr>
+      <td width="80" align="left" class="abk14">确认密码：</td>
+      <td width="300"><input name="confirm_password" type="password" class="ina4_pw" id="conform_password" size="25"/></td>
+      <td><img src="images/dot_green.gif" width="16" height="16"> 
+        <!--填写错误显示<div class="f_error">请再次输入密码</div> --></td>
+    </tr>
+
+    <tr>
+      <td width="80" align="left" class="abk14">手机号码：</td>
+      <td width="300">
+      <table width="290" border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+            <td width="300"><input name="vcode" class="ina4" id="vcode" size="20" type="text" style="width:280px"></td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+      <td class="reg_td">
+ <!--程序需要判断一个手机号码只能注册一个账号--></td>
+    </tr>
+
+    <tr>
+      <td width="80" align="left" class="abk14">验 证 码：</td>
+      <td width="300"><table width="290" border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+            <td width="300"><input name="vcode" class="ina4" id="vcode" size="20" type="text" style="width:280px"></td>
+          </tr>
+        </tbody>
+      </table></td>
+      <td><input type="button" id="btn" value="点击获取验证码" onclick="settime(this)" /> <script type="text/javascript"> 
+var countdown=120; 
+function settime(val) { 
+if (countdown == 0) { 
+val.removeAttribute("disabled");    
+val.value="点击获取验证码"; 
+countdown = 120; 
+} else { 
+val.setAttribute("disabled", true); 
+val.value="重新发送(" + countdown + ")"; 
+countdown--; 
+} 
+setTimeout(function() { 
+settime(val) 
+},1000) 
+} 
+</script> 
+</td>
+    </tr>
+
+    <tr>
+      <td width="80" height="40" align="left">&nbsp;</td>
+      <td width="300"><label>
+          <input name="act" type="hidden" value="act_register" >
+          <input type="hidden" name="back_act" value="{$back_act}" />
+
+        <input name="agreement" type="checkbox" value="1" checked="checked" />
+        我已阅读并同意《<a href="article.php?cat_id=-1"  target="_blank" class="ab">秀当用户注册协议</a>》</label></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="80" align="left">&nbsp;</td>
+      <td width="300" align="left">
+      <input type="image"  name="Submit" src="images/bnt_reg3.gif"></td>
+      <td align="left">&nbsp;</td>
+    </tr>
+
+    <tr>
+      <td width="80" align="left">&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+  </table>
+  </form>
+</div>
+<!--- login end --->
+
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem --> 
+</body>
+</html>

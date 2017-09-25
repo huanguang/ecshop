@@ -1,0 +1,305 @@
+
+
+<script type="text/javascript">
+var process_request = "{$lang.process_request}";
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $(".def-nav,.info-i").hover(function(){
+	  $(this).find(".pulldown-nav").addClass("hover");
+	  $(this).find(".pulldown").show();
+  },function(){
+	  $(this).find(".pulldown").hide();
+	  $(this).find(".pulldown-nav").removeClass("hover");
+  });
+  
+});
+</script><!--控制顶部网站导航下拉效果-->
+ 		 <style type="text/css">
+  		.fixed{ position: fixed; z-index:9999999; top:0; background-color:#ffffff; left:0; width:100% }
+  		.fixed .header-hd{ display: none; }
+ 		</style>
+{insert_scripts files='jquery.json.js'}
+          {insert_scripts files='transport.js,utils.js,ecmoban_common.js'}
+<!--- top --->
+<!--<script type="text/javascript">
+  window.onload=function(){
+   function adsorption(){
+    var headerWrap=document.getElementById('header-wrap');
+    var scrollTop=0;
+    window.onscroll=function(){
+     scrollTop=document.body.scrollTop||document.documentElement.scrollTop;
+     if(scrollTop>100){
+      headerWrap.className='fixed';
+     }else{
+      headerWrap.className='header-wrap';
+     }
+    }
+   }
+   adsorption();
+  }
+ </script>-->
+ 
+   
+       <!-- <div id="header-wrap">  置顶-->
+<div class="top_box">
+	<div class="top">
+        <div class="top_l">
+            <div class="mfzc">购物热线：400-1519888   <span>会员当前人数：<b>{$total_user_num}</b>人</span></div>
+        </div>
+        <div class="top_r">
+        	<div class="top_menu">
+          
+          
+          <font id="ECS_MEMBERZONE" style="display:block; float:left;">{* ECSHOP 提醒您：根据用户id来调用member_info.lbi显示不同的界面  *}{insert name='member_info'} </font>
+            
+
+                <a href="user.php?act=order_list">我的订单</a>
+                <a data-toggle="modal" href="javascript:qiandao()" style="color:#d40e03;">[每日签到]</a>
+                <!---<a href="cart.php">购物车（<b>0</b>）</a>--->
+                <a href="#">防伪查询</a>
+                <script>
+                  function qiandao(){
+                      $.ajax({
+                   type: "POST",
+                   url: "user.php",
+                   data: {act:'qiandao'},
+                   dataType: "json",
+                   success: function(data){
+                   if(data.error == '1'){
+                          document.getElementById('zong').innerHTML = data.zong;
+                          document.getElementById('jin').innerHTML = data.jin;
+                         var id = document.getElementById('login-modal1');
+                          id.style.display = '';
+                          }else if(data.error == '2'){
+                            alert('今天已经签到，明天再来睋！');
+                          }else if(data.error == '0'){
+                            alert('请先登录');
+                          }
+                      }
+                  });
+                    
+                  }
+                  function guanbi(){
+                    var id = document.getElementById('login-modal1');
+                    id.style.display = 'none';
+                  }
+                </script>
+<div class="modal1" id="login-modal1" style="display:none;">
+<div class="popup1" style="z-index: 999; width: 343px; height: 232px; position: fixed;display: block;" id="commentPop">
+    <div class="title"><em>签到成功</em><a href="javascript:guanbi();" data-dismiss="modal">×</a></div>
+    <div class="wz">
+    	<p>获得总积分：<span><b id="zong"></b></span>&nbsp;积分</p>
+    	<p>恭喜您签到成功，获得<span id="jin"></span>个积分！</p>
+    	<p>连续签到可得更多积分。</p>
+    </div>
+    <div class="bt" >
+        <a href="javascript:guanbi();" class="bt-3" id="commentBtn" data-dismiss="modal">确 认</a>
+    </div>
+<div class="dialog_close"></div></div>    
+    </div>                     
+            </div>
+            <!---<div class="jmwm">
+            	<span>加盟我们</span>
+                <div class="pull">
+                	<li><a href="article.php">加盟我们</a></li>
+                	<li><a href="article.php">加盟我们</a></li>
+                </div>
+            </div>--->
+            <ul class="ul1">
+            	<li>关注我们：</li>
+                <li><a href="#"><img src="images/ico_wx.png"></a></li>
+                <li><a href="#"><img src="images/ico_sina.png"></a></li>
+                <li><a href="#"><img src="images/ico_qq.png"></a></li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+<!--- top end --->
+
+<!--- top1 --->
+<div class="top_box1">
+	<div class="top1">
+    	<div class="logo"><a href="index.php"><img src="images/logo.png" /></a></div>
+        <div class="xcy">
+        	<p>全球原产地直供</p>
+        	<p><img src="images/site.png"></p>
+        </div>
+
+
+   <script type="text/javascript">
+    {literal}
+    <!--
+    function checkSearchForm()
+    {
+        if(document.getElementById('keyword').value)
+        {
+            return true;
+        }
+        else
+        {
+            alert("{$lang.no_keywords}");
+            return false;
+        }
+    }
+    -->
+    {/literal}
+    </script>
+
+
+
+        <!---    头部搜索内容          开始     --->
+  <form id="searchForm" name="searchForm" method="get" action="search.php" onSubmit="return checkSearchForm()"  >
+    	<div class="search_box" style="width: 500px;">
+        	<div class="search"  style="width: 492px;">
+            	<input type="text"  name="keywords" id="keyword" value="{$search_keywords|escape}" class="srk1" onblur="if(this.value==''){this.value='请输入关键词';this.className='srk1'}" onfocus="if(this.value==this.defaultValue){this.value='';this.className='srk2'}">
+
+      <button style="border:none;background:none;padding:0"><input type="submit" class="an" value="搜 索" /></button>
+
+				<div class="clear"></div>
+			</div>
+			<div class="wz">
+        {if $searchkeywords}
+            {foreach from=$searchkeywords item=val}
+              <a href="search.php?keywords={$val|escape:url}">{$val}</a>
+            {/foreach}
+        {/if}
+      </div>
+        </div>
+   </form>
+        <!---    头部搜索内容          结束     --->
+
+
+
+
+
+        <div class="sys">
+        	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="right" valign="top"><span>扫一扫：</span></td>
+    <td align="center">
+    <a class="sjb"><img src="{$shouji_erweoma}" width="52" height="52"><p>手机版</p>
+    <div class="sjb_d"><img src="{$shouji_erweoma}" width="186" height="186" /></div>
+    </a>
+    </td>
+    <td align="center">
+    <a class="wx"><img src="{$weixin_erweoma}" width="52" height="52"><p>微信</p>
+    <div class="wx_d"><img src="{$weixin_erweoma}" width="186" height="186" /></div>
+    </a>
+    </td>
+  </tr>
+</table>
+        </div>
+    </div>
+    <div class="clear"></div>
+</div>
+<!--- top1 end --->
+
+<!--- menu --->
+<div class="nav_100">
+ <div class="navlist b_center">
+<div class="nav_list_c" id="Z_TypeList"><ul><li style="cursor:pointer;"><b>全部产品分类</b></li></ul>
+  
+<!--- lefmenu begin --->
+<div class="fl_box b_center Z_MenuList" style="display:none;">
+	<!--- lefmenu begin --->
+	<div class="spfl">
+  <div class="abk1_category_list">
+   <div class="warpper">
+    <div id="nav">
+    <div class="fl">
+     <ul class="tit">
+
+
+
+    <!--{foreach from=$categories item=cat}-->
+        <li class="mod_cate">
+        <div class="mod_box">
+
+            <h2><a href="{$cat.url}">{$cat.name|escape:html}</a></h2>
+
+            <div class="mod_wz">
+
+     <!--{foreach from=$cat.cat_id item=child}-->
+                <a href="{$child.url}">{$child.name|escape:html}</a>
+       <!--{/foreach}-->
+                   
+            </div>
+
+        </div>
+       </li>
+     <!--{/foreach}-->
+
+
+
+
+
+      </ul>
+      <div class="clear"></div>
+      </div>
+      <!--- 广告 --->
+      <div class="yc_gg">
+
+
+      <!--{foreach from=$ad_all_fl item=ads}-->
+      	<div class="gg_box">
+            <a href="{$ads.ad_link}">
+            <img src="data/afficheimg/{$ads.ad_code}" width="200" height="110" /></a>
+        </div>
+      <!--{/foreach}-->    
+      </div>
+      <!--- 广告 end --->
+    </div>
+</div>
+
+<script type="text/javascript">
+$("#nav .tit").slide({
+	type:"menu",
+	titCell:".mod_cate",
+	targetCell:".mod_subcate",
+	delayTime:0,
+	triggerTime:10,
+	defaultPlay:false,
+	returnDefault:true
+});
+</script>
+     
+  </div>
+    </div>
+    <!--- lefmenu end --->
+</div>
+<!--- lefmenu end --->
+  
+  
+  </div>
+
+
+  <div class="nav_list_n">
+   <ul>
+
+
+   <li><a href="index.php">{$lang.home}</a></li>
+
+     <!--      头部导航            开始             -->
+<!-- {foreach name=nav_middle_list from=$navigator_list.middle item=nav} -->
+    <li>
+        <a href="{$nav.url}">
+         {$nav.name}</a>
+    </li>
+<!--{/foreach}-->
+     <!--      头部导航            结束             -->
+    
+   </ul>
+  </div>
+
+
+  <div class="nav_list_s">
+  	<a href="javascript:;">手机版</a>
+  </div>
+  
+ </div>
+ <!--navlist end-->
+</div>
+<!--- menu end --->
+<!--</div>-->

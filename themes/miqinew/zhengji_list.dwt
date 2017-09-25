@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{$page_title}</title>
+
+<link rel="icon" href="favicon.gif" type="image/gif" />
+
+<link href="css/tuang.css" rel="stylesheet" type="text/css" />
+<link href="css/common.css" rel="stylesheet" type="text/css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+<script type="text/javascript" src="js/nav.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+<script type="text/javascript" src="js/modal.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<style>
+#nav .mod_subcate{top:0;}
+</style>
+</head>
+
+<body>
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+
+<!--- cur begin --->
+<div class="cur_wz">
+	<span><a href="index.php">首页</a></span> > 秀当公益
+</div>
+<!--- cur end --->
+
+<!--- article --->
+<div class="main_box">
+<!--- 左侧 --->
+<div class="dongtai_l">
+
+<!--{if $helps_left}-->
+<div id="questions" class="article_l">
+	<div class="tit"><a href="public.php">秀当公益</a></div>
+	<ul>
+<!-- {foreach from=$helps_left item=help_cat name=cat key=key} -->
+		<li class="clearfix">
+			<h5  {if $key eq $cat_id} class="on"{else}class=''{/if}>
+			<b class="UI-ask"></b>{$help_cat.cat_name}</h5>
+			<div class="foldContent">
+            <!-- {foreach from=$help_cat.article item=item} -->
+				<p><a href="{if $item.short_title eq '发布征集'}zhengji.php{elseif $item.short_title eq '征集列表'}zhengji_list.php{elseif $item.short_title eq '最新公告'}article_cat.php?id=19{elseif $item.short_title eq '促销活动'}article_cat.php?id=20{elseif $item.short_title eq '媒体报道'}article_cat.php?id=21{else}{$item.url}{/if}">{$item.short_title}</a></p>
+                <!-- {/foreach} -->
+			</div>
+		</li>
+	<!-- {/foreach} -->
+		</ul>
+    <div class="clear"></div>
+</div>
+<!--{/if}-->
+</div>
+<!-- 左侧 end -->    
+
+<!-- 右侧 -->
+    <div class="user_r" style="margin-left:0px;margin-top: 0px;">
+      <div class="qtxx dongt">
+          <div class="tit">学校征集</div>
+            <div class="lb1">
+                <div class="zjss">
+                  <div class="zjss_l"><form action="zhengji_list.php" method="post"><input name="ke" type="text" value="{$ke}" class="srk"><input type="submit" class="an" value="搜 索"></form></div>
+                    <div class="zjss_r"><a href="fbzj.php">发布征集</a></div>
+                    <div class="clear"></div>
+                </div>
+              <ul>
+              <!-- {foreach from=$zhengji item=zhengji} -->
+                  <li>
+                      <div class="lb_l">
+                            <h2><a href="zhengji_info.php?id={$zhengji.id}">{$zhengji.name}</a></h2>
+                            <div class="js">{$zhengji.content|truncate:120}<a href="zhengji_info.php?id={$zhengji.id}">查看详情&gt;&gt;</a></div>
+                        </div>
+                        <div class="lb_r">
+                          <a href="javascript:dianzan({$zhengji.id},{$zhengji.praise});">
+                              <p id="dian_{$zhengji.id}">{$zhengji.praise}</p>
+                              <input type="hidden" id="dians_{$zhengji.id}" value="{$zhengji.praise}">
+                                <span>赞</span>
+                            </a>
+                        </div>
+                        <div class="clear"></div>
+                    </li>
+                <!-- {/foreach} -->
+                </ul>
+<!-- #BeginLibraryItem "/library/pages.lbi" --><!-- #EndLibraryItem -->
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+      function dianzan(id,dianz){
+        var a = 1;
+        var shu = document.getElementById('dians_'+id).value;
+        var ss = parseInt(shu)+a;
+          $.ajax({
+             type: "post",
+             url: "zhengji.php?act=ajax",
+             data: {id:id,dianz:dianz},
+             dataType: "json",
+             success: function(data){
+                         if(data == '3'){
+                            alert('已经点赞！');
+                         }else if(data == '0'){
+                            alert('点赞失败！');
+                         }else if(data == '1'){
+                            alert('点赞成功！');
+                            document.getElementById('dian_'+id).innerHTML = ss;
+                         }else if(data == '4'){
+                            alert('登录后才能点赞睋！');
+                         }
+                      }
+         });
+      }
+    </script>
+    <!-- 右侧 end -->
+<div class="clear"></div>     
+</div>
+<!-- article end -->
+
+
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem --> 
+</body>
+</html>

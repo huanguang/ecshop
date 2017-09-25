@@ -1,0 +1,405 @@
+<script type="text/javascript">
+$(document).ready(function(){
+  $(".def-nav,.info-i").hover(function(){
+	  $(this).find(".pulldown-nav").addClass("hover");
+	  $(this).find(".pulldown").show();
+  },function(){
+	  $(this).find(".pulldown").hide();
+	  $(this).find(".pulldown-nav").removeClass("hover");
+  });
+  
+});
+</script><!--控制顶部网站导航下拉效果-->
+ 		 <style type="text/css">
+  		.fixed{ position: fixed; z-index:9999999; top:0; background-color:#ffffff; left:0; width:100% }
+  		.fixed .header-hd{ display: none; }
+ 		</style>
+
+<!--- top --->
+<!--<script type="text/javascript">
+  window.onload=function(){
+   function adsorption(){
+    var headerWrap=document.getElementById('header-wrap');
+    var scrollTop=0;
+    window.onscroll=function(){
+     scrollTop=document.body.scrollTop||document.documentElement.scrollTop;
+     if(scrollTop>100){
+      headerWrap.className='fixed';
+     }else{
+      headerWrap.className='header-wrap';
+     }
+    }
+   }
+   adsorption();
+  }
+ </script>-->
+       <!-- <div id="header-wrap">  置顶-->
+<div class="top_box">
+	<div class="top">
+        <div class="top_l">
+            <div class="mfzc">购物热线：400-1519888   <span>会员当前人数：<b>121</b>人</span></div>
+        </div>
+        <div class="top_r">
+        	<div class="top_menu">
+            	<a href="user.php">登录</a>
+                <a href="user.php?act=register">免费注册</a>
+                <a href="user_order.php">我的订单</a>
+                <a data-toggle="modal" href="#login-modal1" style="color:#d40e03;">[每日签到]</a>
+                <!---<a href="cart.php">购物车（<b>0</b>）</a>--->
+                <a href="#">防伪查询</a>
+<div class="modal1" id="login-modal1" style="display:none;">
+<div class="popup1" style="z-index: 999; width: 343px; height: 232px; position: fixed;display: block;" id="commentPop">
+    <div class="title"><em>签到成功</em><a href="javascript:;" data-dismiss="modal">×</a></div>
+    <div class="wz">
+    	<p>获得总积分：<span><b>100</b></span>&nbsp;积分</p>
+    	<p>恭喜您签到成功，获得<span>10</span>个积分！</p>
+    	<p>连续签到可得更多积分，<span>50</span>封顶哦。</p>
+    </div>
+    <div class="bt" >
+        <a href="javascript:;" class="bt-3" id="commentBtn" data-dismiss="modal">确 认</a>
+    </div>
+<div class="dialog_close"></div></div>    
+    </div>                     
+            </div>
+            <!---<div class="jmwm">
+            	<span>加盟我们</span>
+                <div class="pull">
+                	<li><a href="article.php">加盟我们</a></li>
+                	<li><a href="article.php">加盟我们</a></li>
+                </div>
+            </div>--->
+            <ul class="ul1">
+            	<li>关注我们：</li>
+                <li><a href="#"><img src="images/ico_wx.png"></a></li>
+                <li><a href="#"><img src="images/ico_sina.png"></a></li>
+                <li><a href="#"><img src="images/ico_qq.png"></a></li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+<!--- top end --->
+
+<!--- top1 --->
+<div class="top_box1">
+	<div class="top1">
+    	<div class="logo"><a href="index.php"><img src="images/logo.png" /></a></div>
+        <div class="xcy">
+        	<p>全球原产地直供</p>
+        	<p><img src="images/site.png"></p>
+        </div>
+    	<div class="search_box">
+        	<div class="search">
+            	<input type="text" value="请输入关键词" class="srk1" onblur="if(this.value==''){this.value='请输入关键词';this.className='srk1'}" onfocus="if(this.value==this.defaultValue){this.value='';this.className='srk2'}">
+<input type="button" class="an" value="搜 索" />
+				<div class="clear"></div>
+			</div>
+			<div class="wz">
+            	<a href="#">白葡萄酒</a>
+                <a href="#">起泡酒</a>
+                <a href="#">法国</a>
+                <a href="#">霞多丽</a>
+                <a href="#">波尔多</a>
+                <a href="#">奔富</a>
+                <a href="#">赤霞珠</a>
+            </div>
+        </div>
+        <div class="sys">
+        	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="right" valign="top"><span>扫一扫：</span></td>
+    <td align="center">
+    <a class="sjb"><img src="images/rwm01.jpg"><p>手机版</p>
+    <div class="sjb_d"><img src="images/rwm.jpg" width="186" height="186" /></div>
+    </a>
+    </td>
+    <td align="center">
+    <a class="wx"><img src="images/rwm02.jpg"><p>微信</p>
+    <div class="wx_d"><img src="images/rwm.jpg" width="186" height="186" /></div>
+    </a>
+    </td>
+  </tr>
+</table>
+        </div>
+    </div>
+    <div class="clear"></div>
+</div>
+<!--- top1 end --->
+
+<!--- menu --->
+<div class="nav_100">
+ <div class="navlist b_center">
+<div class="nav_list_c" id="Z_TypeList"><ul><li style="cursor:pointer;"><b>全部产品分类</b></li></ul>
+  
+<!--- lefmenu begin --->
+<div class="fl_box b_center Z_MenuList" style="display:none;">
+	<!--- lefmenu begin --->
+	<div class="spfl">
+  <div class="abk1_category_list">
+   <div class="warpper">
+    <div id="nav">
+    <div class="fl">
+     <ul class="tit">
+      <li class="mod_cate">
+      <div class="mod_box">
+          <h2><a href="wedding.php">一键选酒</a></h2>
+          <div class="mod_wz">
+              <a href="#">拉菲</a>
+              <a href="#">卡维留里</a>
+              <a href="#">张裕</a>      
+              <a href="#">长城</a>      
+              <a href="#">奔富</a>      
+              <a href="#">干露</a>      
+              <a href="#">张裕</a>      
+              <a href="#">卡维留里</a>
+              <a href="#">奔富</a>      
+              <a href="#">干露</a>      
+          </div>
+      </div>
+          </li>
+      <li class="mod_cate">
+      <div class="mod_box">
+          <h2><a href="wedding.php">一键选酒</a></h2>
+          <div class="mod_wz">
+              <a href="#">拉菲</a>
+              <a href="#">卡维留里</a>
+              <a href="#">张裕</a>      
+              <a href="#">长城</a>      
+              <a href="#">奔富</a>      
+              <a href="#">干露</a>  
+              <a href="#">张裕</a>      
+              <a href="#">长城</a>      
+              <a href="#">卡维留里</a>
+              <a href="#">干露</a>      
+          </div>
+      </div>
+          </li>
+      <li class="mod_cate">
+      <div class="mod_box">
+          <h2><a href="wedding.php">一键选酒</a></h2>
+          <div class="mod_wz">
+              <a href="#">拉菲</a>
+              <a href="#">卡维留里</a>
+              <a href="#">张裕</a>      
+              <a href="#">长城</a>      
+              <a href="#">奔富</a>      
+              <a href="#">干露</a>  
+              <a href="#">张裕</a>      
+              <a href="#">长城</a>      
+              <a href="#">奔富</a>      
+              <a href="#">卡维留里</a>
+          </div>
+      </div>
+          </li>
+      <li class="mod_cate">
+      <div class="mod_box">
+          <h2><a href="wedding.php">一键选酒</a></h2>
+          <div class="mod_wz">
+              <a href="#">拉菲</a>
+              <a href="#">卡维留里</a>
+              <a href="#">张裕</a>      
+              <a href="#">长城</a>      
+              <a href="#">奔富</a>      
+              <a href="#">干露</a> 
+              <a href="#">卡维留里</a>
+              <a href="#">长城</a>      
+              <a href="#">奔富</a>      
+              <a href="#">干露</a>      
+          </div>
+      </div>
+          </li>
+      <li class="mod_cate">
+      <div class="mod_box">
+          <h2><a href="wedding.php">一键选酒</a></h2>
+          <div class="mod_wz">
+              <a href="#">拉菲</a>
+              <a href="#">卡维留里</a>
+              <a href="#">张裕</a>      
+              <a href="#">长城</a>      
+              <a href="#">奔富</a>      
+              <a href="#">干露</a>   
+              <a href="#">卡维留里</a>
+              <a href="#">长城</a>      
+              <a href="#">奔富</a>      
+              <a href="#">干露</a>      
+          </div>
+      </div>
+          </li>
+      <li class="mod_cate">
+      <div class="mod_box">
+          <h2><a href="wedding.php">一键选酒</a></h2>
+          <div class="mod_wz">
+              <a href="#">拉菲</a>
+              <a href="#">卡维留里</a>
+              <a href="#">张裕</a>      
+              <a href="#">长城</a>      
+              <a href="#">奔富</a>      
+              <a href="#">卡维留里</a>
+              <a href="#">张裕</a>      
+              <a href="#">长城</a>      
+              <a href="#">奔富</a>      
+              <a href="#">干露</a>      
+          </div>
+      </div>
+          </li>
+      <li class="mod_cate">
+      <div class="mod_box">
+          <h2><a href="wedding.php">一键选酒</a></h2>
+          <div class="mod_wz">
+              <a href="#">拉菲</a>
+              <a href="#">卡维留里</a>
+              <a href="#">张裕</a>      
+              <a href="#">长城</a>      
+              <a href="#">奔富</a>      
+              <a href="#">干露</a>    
+              <a href="#">张裕</a>      
+              <a href="#">卡维留里</a>
+              <a href="#">奔富</a>      
+              <a href="#">干露</a>      
+          </div>
+      </div>
+          </li>
+      <li class="mod_cate">
+      <div class="mod_box">
+          <h2><a href="wedding.php">一键选酒</a></h2>
+          <div class="mod_wz">
+              <a href="#">拉菲</a>
+              <a href="#">卡维留里</a>
+              <a href="#">张裕</a>      
+              <a href="#">长城</a>      
+              <a href="#">奔富</a>      
+              <a href="#">干露</a>    
+              <a href="#">张裕</a>      
+              <a href="#">长城</a>      
+              <a href="#">卡维留里</a>
+              <a href="#">干露</a>      
+          </div>
+      </div>
+          </li>
+      <li class="mod_cate">
+      <div class="mod_box">
+          <h2><a href="wedding.php">一键选酒</a></h2>
+          <div class="mod_wz">
+              <a href="#">拉菲</a>
+              <a href="#">卡维留里</a>
+              <a href="#">张裕</a>      
+              <a href="#">长城</a>      
+              <a href="#">奔富</a>      
+              <a href="#">干露</a>  
+              <a href="#">卡维留里</a>
+              <a href="#">长城</a>      
+              <a href="#">奔富</a>      
+              <a href="#">干露</a>      
+          </div>
+      </div>
+          </li>
+      <li class="mod_cate">
+      <div class="mod_box">
+          <h2><a href="wedding.php">一键选酒</a></h2>
+          <div class="mod_wz">
+              <a href="#">拉菲</a>
+              <a href="#">卡维留里</a>
+              <a href="#">张裕</a>      
+              <a href="#">长城</a>      
+              <a href="#">奔富</a>      
+              <a href="#">干露</a>  
+              <a href="#">张裕</a>      
+              <a href="#">卡维留里</a>
+              <a href="#">奔富</a>      
+              <a href="#">干露</a>      
+          </div>
+      </div>
+          </li>
+      <li class="mod_cate">
+      <div class="mod_box">
+          <h2><a href="wedding.php">一键选酒</a></h2>
+          <div class="mod_wz">
+              <a href="#">拉菲</a>
+              <a href="#">卡维留里</a>
+              <a href="#">张裕</a>      
+              <a href="#">长城</a>      
+              <a href="#">奔富</a>      
+              <a href="#">干露</a>      
+              <a href="#">张裕</a>  
+              <a href="#">卡维留里</a>
+              <a href="#">长城</a>      
+              <a href="#">干露</a>      
+          </div>
+      </div>
+          </li>
+      <li class="mod_cate">
+      <div class="mod_box">
+          <h2><a href="wedding.php">一键选酒</a></h2>
+          <div class="mod_wz">
+              <a href="#">拉菲</a>
+              <a href="#">卡维留里</a>
+              <a href="#">张裕</a>      
+              <a href="#">长城</a>      
+              <a href="#">奔富</a>      
+              <a href="#">干露</a>    
+              <a href="#">张裕</a>      
+              <a href="#">卡维留里</a>
+              <a href="#">奔富</a>      
+              <a href="#">干露</a>      
+          </div>
+      </div>
+          </li>
+      </ul>
+      <div class="clear"></div>
+      </div>
+      <!--- 广告 --->
+      <div class="yc_gg">
+      	<div class="gg_box">
+            <a href="#"><img src="images/banner11.jpg" width="200" height="110" /></a>
+        </div>
+      	<div class="gg_box">
+            <a href="#"><img src="images/banner12.jpg" width="200" height="110" /></a>
+        </div>
+      	<div class="gg_box">
+            <a href="#"><img src="images/banner13.jpg" width="200" height="110" /></a>
+        </div>
+      </div>
+      <!--- 广告 end --->
+    </div>
+</div>
+
+<script type="text/javascript">
+$("#nav .tit").slide({
+	type:"menu",
+	titCell:".mod_cate",
+	targetCell:".mod_subcate",
+	delayTime:0,
+	triggerTime:10,
+	defaultPlay:false,
+	returnDefault:true
+});
+</script>
+     
+  </div>
+    </div>
+    <!--- lefmenu end --->
+</div>
+<!--- lefmenu end --->
+  
+  
+  </div>
+  <div class="nav_list_n">
+   <ul>
+   <li><a href="index.php">首页</a></li>
+    <li><a href="brand.php">品牌特卖</a></li>
+    <li><a href="tuang.php">限时团购</a></li>
+    <li><a href="integral.php">积分商城</a></li>
+    <li><a href="wedding.php">明星彩妆</a></li>
+    <li><a href="culture.php">大课堂</a></li>
+    <li><a href="public.php">秀当公益</a></li>
+   </ul>
+  </div>
+  <div class="nav_list_s">
+  	<a href="javascript:;">手机版</a>
+  </div>
+  
+ </div>
+ <!--navlist end-->
+</div>
+<!--- menu end --->
+<!--</div>-->

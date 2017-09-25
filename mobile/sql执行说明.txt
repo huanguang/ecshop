@@ -1,0 +1,1 @@
+SQLÖ´ÐÐÊý¾Ý¿âÓï¾ä   ALTER TABLE `ecs_users` ADD COLUMN `nicheng` CHAR(28) NOT NULL;

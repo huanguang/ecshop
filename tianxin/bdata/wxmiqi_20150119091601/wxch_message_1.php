@@ -1,0 +1,206 @@
+<?php
+require("../../inc/header.php");
+
+/*
+		SoftName : EmpireBak Version 2010
+		Author   : wm_chief
+		Copyright: Powered by www.phome.net
+*/
+
+DoSetDbChar('utf8');
+E_D("DROP TABLE IF EXISTS `wxch_message`;");
+E_C("CREATE TABLE `wxch_message` (
+  `id` int(9) unsigned NOT NULL AUTO_INCREMENT,
+  `wxid` char(28) NOT NULL,
+  `w_message` text NOT NULL,
+  `message` text NOT NULL,
+  `belong` int(9) unsigned NOT NULL,
+  `dateline` int(10) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `wxid` (`wxid`)
+) ENGINE=MyISAM AUTO_INCREMENT=183 DEFAULT CHARSET=utf8");
+E_D("replace into `wxch_message` values('1','oog1Yt9spi8jRGx92QJ-qUkuOhBQ','','menu:','0','1420996159');");
+E_D("replace into `wxch_message` values('2','oog1Yt9spi8jRGx92QJ-qUkuOhBQ','图文消息','','1','1420996159');");
+E_D("replace into `wxch_message` values('3','oog1Yt9spi8jRGx92QJ-qUkuOhBQ','','menu:gzyhj','0','1420996189');");
+E_D("replace into `wxch_message` values('4','oog1Yt9spi8jRGx92QJ-qUkuOhBQ','欢迎关注微信公众号,活动期间关注送5.00元,优惠券：1000080588\r\n使用结束日期：2009年-10月-14日相关功能','','0','1420996189');");
+E_D("replace into `wxch_message` values('5','oog1Yt9spi8jRGx92QJ-qUkuOhBQ','','menu:zjd','0','1420996205');");
+E_D("replace into `wxch_message` values('6','oog1Yt9spi8jRGx92QJ-qUkuOhBQ','图文消息','','0','1420996205');");
+E_D("replace into `wxch_message` values('7','oog1Yt9spi8jRGx92QJ-qUkuOhBQ','','menu:zjd','0','1420996222');");
+E_D("replace into `wxch_message` values('8','oog1Yt9spi8jRGx92QJ-qUkuOhBQ','图文消息','','0','1420996222');");
+E_D("replace into `wxch_message` values('9','oog1Yt9spi8jRGx92QJ-qUkuOhBQ','','menu:dzp','0','1420996726');");
+E_D("replace into `wxch_message` values('10','oog1Yt9spi8jRGx92QJ-qUkuOhBQ','图文消息','','0','1420996726');");
+E_D("replace into `wxch_message` values('11','oog1Yt9spi8jRGx92QJ-qUkuOhBQ','','menu:dzp','0','1420996835');");
+E_D("replace into `wxch_message` values('12','oog1Yt9spi8jRGx92QJ-qUkuOhBQ','图文消息','','0','1420996835');");
+E_D("replace into `wxch_message` values('13','oog1Yt9spi8jRGx92QJ-qUkuOhBQ','','menu:dzp','0','1420996840');");
+E_D("replace into `wxch_message` values('14','oog1Yt9spi8jRGx92QJ-qUkuOhBQ','图文消息','','0','1420996840');");
+E_D("replace into `wxch_message` values('15','oog1Yt9spi8jRGx92QJ-qUkuOhBQ','','menu:','0','1420997034');");
+E_D("replace into `wxch_message` values('16','oog1Yt9spi8jRGx92QJ-qUkuOhBQ','图文消息','','0','1420997034');");
+E_D("replace into `wxch_message` values('17','oog1Yt9spi8jRGx92QJ-qUkuOhBQ','','menu:gzyhj','0','1420997042');");
+E_D("replace into `wxch_message` values('18','oog1Yt9spi8jRGx92QJ-qUkuOhBQ','欢迎关注微信公众号,您已经领取过优惠卷1000080588相关功能','','0','1420997042');");
+E_D("replace into `wxch_message` values('19','oog1Yt9spi8jRGx92QJ-qUkuOhBQ','','menu:dzp','0','1420997050');");
+E_D("replace into `wxch_message` values('20','oog1Yt9spi8jRGx92QJ-qUkuOhBQ','图文消息','','0','1420997050');");
+E_D("replace into `wxch_message` values('21','oog1Yt9spi8jRGx92QJ-qUkuOhBQ','','menu:zjd','0','1420997054');");
+E_D("replace into `wxch_message` values('22','oog1Yt9spi8jRGx92QJ-qUkuOhBQ','图文消息','','0','1420997054');");
+E_D("replace into `wxch_message` values('23','oog1Yt9spi8jRGx92QJ-qUkuOhBQ','','menu:dzp','0','1420997088');");
+E_D("replace into `wxch_message` values('24','oog1Yt9spi8jRGx92QJ-qUkuOhBQ','图文消息','','0','1420997088');");
+E_D("replace into `wxch_message` values('25','oog1Yt9spi8jRGx92QJ-qUkuOhBQ','','menu:dzp','0','1420997112');");
+E_D("replace into `wxch_message` values('26','oog1Yt9spi8jRGx92QJ-qUkuOhBQ','图文消息','','0','1420997112');");
+E_D("replace into `wxch_message` values('27','oog1Yt9spi8jRGx92QJ-qUkuOhBQ','','menu:news','0','1420997126');");
+E_D("replace into `wxch_message` values('28','oog1Yt9spi8jRGx92QJ-qUkuOhBQ','图文消息','','0','1420997126');");
+E_D("replace into `wxch_message` values('29','oog1Yt9HMMlVwrpJK71bq_XitpVU','','menu:news','0','1421002674');");
+E_D("replace into `wxch_message` values('30','oog1Yt9HMMlVwrpJK71bq_XitpVU','图文消息','','2','1421002674');");
+E_D("replace into `wxch_message` values('31','oog1Yt9spi8jRGx92QJ-qUkuOhBQ','','menu:','0','1421009139');");
+E_D("replace into `wxch_message` values('32','oog1Yt9spi8jRGx92QJ-qUkuOhBQ','图文消息','','0','1421009139');");
+E_D("replace into `wxch_message` values('33','oog1Yt9spi8jRGx92QJ-qUkuOhBQ','','menu:gzyhj','0','1421009150');");
+E_D("replace into `wxch_message` values('34','oog1Yt9spi8jRGx92QJ-qUkuOhBQ','欢迎关注微信公众号,您已经领取过优惠卷1000080588相关功能','','0','1421009150');");
+E_D("replace into `wxch_message` values('35','oog1Yt9spi8jRGx92QJ-qUkuOhBQ','','menu:http://tx.wushuai.net/wechat/oauth/wxch_oauth.php?oid=1','0','1421009155');");
+E_D("replace into `wxch_message` values('36','oog1Yt9spi8jRGx92QJ-qUkuOhBQ','没有搜索到\"http://tx.wushuai.net/wechat/oauth/wxch_oauth.php?oid=1\"的商品\r\n我们为您推荐:<a href=\"http://tx.wushuai.net/mobile/goods.php?id=24&wxid=oog1Yt9spi8jRGx92QJ-qUkuOhBQ\">贝玲妃留声机粉底霜9.5g</a>','','0','1421009155');");
+E_D("replace into `wxch_message` values('37','oog1Yt9spi8jRGx92QJ-qUkuOhBQ','','menu:qrcode','0','1421009215');");
+E_D("replace into `wxch_message` values('38','oog1Yt9spi8jRGx92QJ-qUkuOhBQ','图文消息','','0','1421009216');");
+E_D("replace into `wxch_message` values('39','oog1Yt9spi8jRGx92QJ-qUkuOhBQ','','menu:qrcode','0','1421009263');");
+E_D("replace into `wxch_message` values('40','oog1Yt9spi8jRGx92QJ-qUkuOhBQ','图文消息','','0','1421009264');");
+E_D("replace into `wxch_message` values('41','oog1Yt9spi8jRGx92QJ-qUkuOhBQ','','menu:qiandao','0','1421009270');");
+E_D("replace into `wxch_message` values('42','oog1Yt9spi8jRGx92QJ-qUkuOhBQ','签到成功+10','','0','1421009270');");
+E_D("replace into `wxch_message` values('43','oog1Yt9spi8jRGx92QJ-qUkuOhBQ','','menu:dzp','0','1421009275');");
+E_D("replace into `wxch_message` values('44','oog1Yt9spi8jRGx92QJ-qUkuOhBQ','图文消息','','0','1421009275');");
+E_D("replace into `wxch_message` values('45','oog1Yt9spi8jRGx92QJ-qUkuOhBQ','','menu:dzp','0','1421009278');");
+E_D("replace into `wxch_message` values('46','oog1Yt9spi8jRGx92QJ-qUkuOhBQ','图文消息','','0','1421009278');");
+E_D("replace into `wxch_message` values('47','oog1Yt9spi8jRGx92QJ-qUkuOhBQ','','menu:zjd','0','1421009281');");
+E_D("replace into `wxch_message` values('48','oog1Yt9spi8jRGx92QJ-qUkuOhBQ','图文消息','','0','1421009281');");
+E_D("replace into `wxch_message` values('49','oog1Yt9spi8jRGx92QJ-qUkuOhBQ','','menu:kefu','0','1421009287');");
+E_D("replace into `wxch_message` values('50','oog1Yt9spi8jRGx92QJ-qUkuOhBQ','客服转接','','0','1421009287');");
+E_D("replace into `wxch_message` values('51','oog1Yt9spi8jRGx92QJ-qUkuOhBQ','','menu:bd','0','1421009295');");
+E_D("replace into `wxch_message` values('52','oog1Yt9spi8jRGx92QJ-qUkuOhBQ','您已经绑定了会员账号：weixin13\r\n如需重新绑定请输入cxbd','','0','1421009295');");
+E_D("replace into `wxch_message` values('53','oog1Yt9spi8jRGx92QJ-qUkuOhBQ','','menu:http://wxmiqi.wushuai.net/wechat/oauth/wxch_oauth.php?oid=1','0','1421605486');");
+E_D("replace into `wxch_message` values('54','oog1Yt9spi8jRGx92QJ-qUkuOhBQ','没有搜索到\"http://wxmiqi.wushuai.net/wechat/oauth/wxch_oauth.php?oid=1\"的商品\r\n我们为您推荐:<a href=\"http://tx.wushuai.net/mobile/goods.php?id=117&wxid=oog1Yt9spi8jRGx92QJ-qUkuOhBQ\">嘉娜宝玫瑰药用洗面奶150g</a>','','0','1421605486');");
+E_D("replace into `wxch_message` values('55','oog1YtySH4fjAM2uxRlf8ejzlsGc','','menu:qrcode','0','1421605609');");
+E_D("replace into `wxch_message` values('56','oog1Yt9spi8jRGx92QJ-qUkuOhBQ','','menu:http://wxmiqi.wushuai.net/wechat/oauth/wxch_oauth.php?oid=1','0','1421605610');");
+E_D("replace into `wxch_message` values('57','oog1Yt9spi8jRGx92QJ-qUkuOhBQ','没有搜索到\"http://wxmiqi.wushuai.net/wechat/oauth/wxch_oauth.php?oid=1\"的商品\r\n我们为您推荐:<a href=\"http://wxmiqi.wushuai.net/mobile/goods.php?id=22&wxid=oog1Yt9spi8jRGx92QJ-qUkuOhBQ\">娇兰金钻修颜粉饼SPF10</a>','','0','1421605610');");
+E_D("replace into `wxch_message` values('58','oog1YtySH4fjAM2uxRlf8ejzlsGc','','menu:bd','0','1421605614');");
+E_D("replace into `wxch_message` values('59','oog1YtySH4fjAM2uxRlf8ejzlsGc','您已经绑定了会员账号：weixin16\r\n如需重新绑定请输入cxbd','','0','1421605614');");
+E_D("replace into `wxch_message` values('60','oog1YtySH4fjAM2uxRlf8ejzlsGc','','menu:dzp','0','1421605622');");
+E_D("replace into `wxch_message` values('61','oog1YtySH4fjAM2uxRlf8ejzlsGc','图文消息','','0','1421605622');");
+E_D("replace into `wxch_message` values('62','oog1Yt9spi8jRGx92QJ-qUkuOhBQ','','你好','0','1421605634');");
+E_D("replace into `wxch_message` values('63','oog1Yt9spi8jRGx92QJ-qUkuOhBQ','没有搜索到\"你好\"的商品','','62','1421605634');");
+E_D("replace into `wxch_message` values('64','oog1YtySH4fjAM2uxRlf8ejzlsGc','','menu:zjd','0','1421605639');");
+E_D("replace into `wxch_message` values('65','oog1YtySH4fjAM2uxRlf8ejzlsGc','图文消息','','0','1421605639');");
+E_D("replace into `wxch_message` values('66','oog1YtySH4fjAM2uxRlf8ejzlsGc','','menu:help','0','1421605688');");
+E_D("replace into `wxch_message` values('67','oog1YtySH4fjAM2uxRlf8ejzlsGc','功能说明：\r\n输入news显示新品\r\n输入hot显示热销\r\n输入best显示推荐\r\n输入bd进入绑定会员流程\r\n输入ddcx查询最后一个订单\r\n输入kdcx查询最后一个订单中的快递\r\n输入ddlb显示多个订单信息\r\n输入help显示帮助说明','','0','1421605688');");
+E_D("replace into `wxch_message` values('68','oog1YtySH4fjAM2uxRlf8ejzlsGc','','menu:kdcx','0','1421605690');");
+E_D("replace into `wxch_message` values('69','oog1YtySH4fjAM2uxRlf8ejzlsGc','您还没有订单，无法查询快递','','0','1421605690');");
+E_D("replace into `wxch_message` values('70','oog1YtySH4fjAM2uxRlf8ejzlsGc','','menu:http://tx.wushuai.net/wechat/oauth/wxch_oauth.php?oid=1','0','1421605698');");
+E_D("replace into `wxch_message` values('71','oog1YtySH4fjAM2uxRlf8ejzlsGc','没有搜索到\"http://tx.wushuai.net/wechat/oauth/wxch_oauth.php?oid=1\"的商品\r\n我们为您推荐:<a href=\"http://wxmiqi.wushuai.net/mobile/goods.php?id=121&wxid=oog1YtySH4fjAM2uxRlf8ejzlsGc\">肌研极润玻尿酸保湿沫面乳100g</a>','','0','1421605698');");
+E_D("replace into `wxch_message` values('72','ojpX_jig-gyi3_Q9fHXQ4rdHniQs','','1','0','1421605708');");
+E_D("replace into `wxch_message` values('73','ojpX_jig-gyi3_Q9fHXQ4rdHniQs','图文消息','','72','1421605708');");
+E_D("replace into `wxch_message` values('74','oog1YtySH4fjAM2uxRlf8ejzlsGc','','menu:http://tx.wushuai.net/wechat/oauth/wxch_oauth.php?oid=1','0','1421605713');");
+E_D("replace into `wxch_message` values('75','oog1YtySH4fjAM2uxRlf8ejzlsGc','没有搜索到\"http://tx.wushuai.net/wechat/oauth/wxch_oauth.php?oid=1\"的商品\r\n我们为您推荐:<a href=\"http://wxmiqi.wushuai.net/mobile/goods.php?id=17&wxid=oog1YtySH4fjAM2uxRlf8ejzlsGc\">娇韵诗超V型纤容紧致瘦脸面膜75ml</a>','','0','1421605713');");
+E_D("replace into `wxch_message` values('76','oog1YtySH4fjAM2uxRlf8ejzlsGc','','menu:http://tx.wushuai.net/wechat/oauth/wxch_oauth.php?oid=1','0','1421605736');");
+E_D("replace into `wxch_message` values('77','oog1YtySH4fjAM2uxRlf8ejzlsGc','没有搜索到\"http://tx.wushuai.net/wechat/oauth/wxch_oauth.php?oid=1\"的商品\r\n我们为您推荐:<a href=\"http://wxmiqi.wushuai.net/mobile/goods.php?id=22&wxid=oog1YtySH4fjAM2uxRlf8ejzlsGc\">娇兰金钻修颜粉饼SPF10</a>','','0','1421605736');");
+E_D("replace into `wxch_message` values('78','oog1YtySH4fjAM2uxRlf8ejzlsGc','','menu:http://tx.wushuai.net/wechat/oauth/wxch_oauth.php?oid=1','0','1421605745');");
+E_D("replace into `wxch_message` values('79','oog1YtySH4fjAM2uxRlf8ejzlsGc','没有搜索到\"http://tx.wushuai.net/wechat/oauth/wxch_oauth.php?oid=1\"的商品\r\n我们为您推荐:<a href=\"http://wxmiqi.wushuai.net/mobile/goods.php?id=23&wxid=oog1YtySH4fjAM2uxRlf8ejzlsGc\"> 安娜苏魔影幻彩唇膏305#3.4g</a>','','0','1421605745');");
+E_D("replace into `wxch_message` values('80','oog1Yt9spi8jRGx92QJ-qUkuOhBQ','','menu:http://tx.wushuai.net/wechat/oauth/wxch_oauth.php?oid=1','0','1421618385');");
+E_D("replace into `wxch_message` values('81','oog1Yt9spi8jRGx92QJ-qUkuOhBQ','没有搜索到\"http://tx.wushuai.net/wechat/oauth/wxch_oauth.php?oid=1\"的商品\r\n我们为您推荐:<a href=\"http://wxmiqi.wushuai.net/mobile/goods.php?id=114&wxid=oog1Yt9spi8jRGx92QJ-qUkuOhBQ\">思亲肤绿茶泡沫洁面摩丝160ml</a>','','0','1421618385');");
+E_D("replace into `wxch_message` values('82','oog1Yt9spi8jRGx92QJ-qUkuOhBQ','','menu:http://tx.wushuai.net/wechat/oauth/wxch_oauth.php?oid=1','0','1421618955');");
+E_D("replace into `wxch_message` values('83','oog1Yt9spi8jRGx92QJ-qUkuOhBQ','没有搜索到\"http://tx.wushuai.net/wechat/oauth/wxch_oauth.php?oid=1\"的商品\r\n我们为您推荐:<a href=\"http://wxmiqi.wushuai.net/mobile/goods.php?id=17&wxid=oog1Yt9spi8jRGx92QJ-qUkuOhBQ\">娇韵诗超V型纤容紧致瘦脸面膜75ml</a>','','0','1421618955');");
+E_D("replace into `wxch_message` values('84','oog1Yt9spi8jRGx92QJ-qUkuOhBQ','','menu:','0','1421619326');");
+E_D("replace into `wxch_message` values('85','oog1Yt9spi8jRGx92QJ-qUkuOhBQ','图文消息','','0','1421619326');");
+E_D("replace into `wxch_message` values('86','oog1Yt9spi8jRGx92QJ-qUkuOhBQ','','menu:subscribe','0','1421619347');");
+E_D("replace into `wxch_message` values('87','oog1Yt9spi8jRGx92QJ-qUkuOhBQ','','menu:http://wxmiqi.wushuai.net/wechat/oauth/wxch_oauth.php?oid=1','0','1421619352');");
+E_D("replace into `wxch_message` values('88','oog1Yt9spi8jRGx92QJ-qUkuOhBQ','没有搜索到\"http://wxmiqi.wushuai.net/wechat/oauth/wxch_oauth.php?oid=1\"的商品\r\n我们为您推荐:<a href=\"http://wxmiqi.wushuai.net/mobile/goods.php?id=17&wxid=oog1Yt9spi8jRGx92QJ-qUkuOhBQ\">娇韵诗超V型纤容紧致瘦脸面膜75ml</a>','','0','1421619352');");
+E_D("replace into `wxch_message` values('89','oog1Yt9spi8jRGx92QJ-qUkuOhBQ','','你好','0','1421619400');");
+E_D("replace into `wxch_message` values('90','oog1Yt9spi8jRGx92QJ-qUkuOhBQ','没有搜索到\"你好\"的商品\r\n我们为您推荐:<a href=\"http://wxmiqi.wushuai.net/mobile/goods.php?id=119&wxid=oog1Yt9spi8jRGx92QJ-qUkuOhBQ\">蓓丽柔和泡沫洁面膏125ml</a>','','89','1421619400');");
+E_D("replace into `wxch_message` values('91','oog1Yt9spi8jRGx92QJ-qUkuOhBQ','','你好','0','1421620325');");
+E_D("replace into `wxch_message` values('92','oog1Yt9spi8jRGx92QJ-qUkuOhBQ','没有搜索到\"你好\"的商品','','91','1421620325');");
+E_D("replace into `wxch_message` values('93','oog1Yt9spi8jRGx92QJ-qUkuOhBQ','','你好','0','1421620363');");
+E_D("replace into `wxch_message` values('94','oog1Yt9spi8jRGx92QJ-qUkuOhBQ','没有搜索到\"你好\"的商品\r\n我们为您推荐:<a href=\"http://wxmiqi.wushuai.net/mobile/goods.php?id=117&wxid=oog1Yt9spi8jRGx92QJ-qUkuOhBQ\">嘉娜宝玫瑰药用洗面奶150g</a>','','93','1421620363');");
+E_D("replace into `wxch_message` values('95','oog1Yt9spi8jRGx92QJ-qUkuOhBQ','','voice:您好','0','1421620376');");
+E_D("replace into `wxch_message` values('96','oog1Yt9spi8jRGx92QJ-qUkuOhBQ','没有搜索到\"您好\"的商品\r\n我们为您推荐:<a href=\"http://wxmiqi.wushuai.net/mobile/goods.php?id=114&wxid=oog1Yt9spi8jRGx92QJ-qUkuOhBQ\">思亲肤绿茶泡沫洁面摩丝160ml</a>','','0','1421620376');");
+E_D("replace into `wxch_message` values('97','oog1Yt3aN-l5NKzvU2CjxDvj47d4','','menu:subscribe','0','1421622891');");
+E_D("replace into `wxch_message` values('98','oog1Yt3aN-l5NKzvU2CjxDvj47d4','','menu:http://tx.wushuai.net/wechat/oauth/wxch_oauth.php?oid=1','0','1421622905');");
+E_D("replace into `wxch_message` values('99','oog1Yt3aN-l5NKzvU2CjxDvj47d4','没有搜索到\"http://tx.wushuai.net/wechat/oauth/wxch_oauth.php?oid=1\"的商品\r\n我们为您推荐:<a href=\"http://wxmiqi.wushuai.net/mobile/goods.php?id=23&wxid=oog1Yt3aN-l5NKzvU2CjxDvj47d4\"> 安娜苏魔影幻彩唇膏305#3.4g</a>','','0','1421622905');");
+E_D("replace into `wxch_message` values('100','oog1Yt3aN-l5NKzvU2CjxDvj47d4','','menu:bd','0','1421622933');");
+E_D("replace into `wxch_message` values('101','oog1Yt3aN-l5NKzvU2CjxDvj47d4','您已经绑定了会员账号：weixin18\r\n如需重新绑定请输入cxbd','','0','1421622933');");
+E_D("replace into `wxch_message` values('102','oog1Yt3aN-l5NKzvU2CjxDvj47d4','','menu:kefu','0','1421622951');");
+E_D("replace into `wxch_message` values('103','oog1Yt3aN-l5NKzvU2CjxDvj47d4','客服转接','','0','1421622951');");
+E_D("replace into `wxch_message` values('104','oog1Yt3aN-l5NKzvU2CjxDvj47d4','','menu:http://tx.wushuai.net/wechat/oauth/wxch_oauth.php?oid=1','0','1421622961');");
+E_D("replace into `wxch_message` values('105','oog1Yt3aN-l5NKzvU2CjxDvj47d4','没有搜索到\"http://tx.wushuai.net/wechat/oauth/wxch_oauth.php?oid=1\"的商品\r\n我们为您推荐:<a href=\"http://wxmiqi.wushuai.net/mobile/goods.php?id=119&wxid=oog1Yt3aN-l5NKzvU2CjxDvj47d4\">蓓丽柔和泡沫洁面膏125ml</a>','','0','1421622961');");
+E_D("replace into `wxch_message` values('106','oog1Yt3aN-l5NKzvU2CjxDvj47d4','','menu:ddcx','0','1421622972');");
+E_D("replace into `wxch_message` values('107','oog1Yt3aN-l5NKzvU2CjxDvj47d4','您还没有订单','','0','1421622972');");
+E_D("replace into `wxch_message` values('108','oog1Yt3aN-l5NKzvU2CjxDvj47d4','','menu:http://wxmiqi.wushuai.net/wechat/oauth/wxch_oauth.php?oid=1','0','1421622978');");
+E_D("replace into `wxch_message` values('109','oog1Yt3aN-l5NKzvU2CjxDvj47d4','没有搜索到\"http://wxmiqi.wushuai.net/wechat/oauth/wxch_oauth.php?oid=1\"的商品\r\n我们为您推荐:<a href=\"http://wxmiqi.wushuai.net/mobile/goods.php?id=17&wxid=oog1Yt3aN-l5NKzvU2CjxDvj47d4\">娇韵诗超V型纤容紧致瘦脸面膜75ml</a>','','0','1421622978');");
+E_D("replace into `wxch_message` values('110','oog1Yt4psiIHq51GV7ByOmr2VIzc','','menu:http://tx.wushuai.net/wechat/oauth/wxch_oauth.php?oid=1','0','1421623015');");
+E_D("replace into `wxch_message` values('111','oog1Yt4psiIHq51GV7ByOmr2VIzc','没有搜索到\"http://tx.wushuai.net/wechat/oauth/wxch_oauth.php?oid=1\"的商品\r\n我们为您推荐:<a href=\"http://wxmiqi.wushuai.net/mobile/goods.php?id=17&wxid=oog1Yt4psiIHq51GV7ByOmr2VIzc\">娇韵诗超V型纤容紧致瘦脸面膜75ml</a>','','6','1421623015');");
+E_D("replace into `wxch_message` values('112','oog1Yt4psiIHq51GV7ByOmr2VIzc','','menu:http://tx.wushuai.net/wechat/oauth/wxch_oauth.php?oid=1','0','1421623039');");
+E_D("replace into `wxch_message` values('113','oog1Yt4psiIHq51GV7ByOmr2VIzc','没有搜索到\"http://tx.wushuai.net/wechat/oauth/wxch_oauth.php?oid=1\"的商品\r\n我们为您推荐:<a href=\"http://wxmiqi.wushuai.net/mobile/goods.php?id=23&wxid=oog1Yt4psiIHq51GV7ByOmr2VIzc\"> 安娜苏魔影幻彩唇膏305#3.4g</a>','','0','1421623039');");
+E_D("replace into `wxch_message` values('114','oog1Yt4psiIHq51GV7ByOmr2VIzc','','menu:kefu','0','1421623047');");
+E_D("replace into `wxch_message` values('115','oog1Yt4psiIHq51GV7ByOmr2VIzc','客服转接','','0','1421623047');");
+E_D("replace into `wxch_message` values('116','oog1Yt4psiIHq51GV7ByOmr2VIzc','','menu:bd','0','1421623060');");
+E_D("replace into `wxch_message` values('117','oog1Yt4psiIHq51GV7ByOmr2VIzc','您已经绑定了会员账号：weixin19\r\n如需重新绑定请输入cxbd','','0','1421623060');");
+E_D("replace into `wxch_message` values('118','oog1Yt4psiIHq51GV7ByOmr2VIzc','','menu:ddcx','0','1421623069');");
+E_D("replace into `wxch_message` values('119','oog1Yt4psiIHq51GV7ByOmr2VIzc','您还没有订单','','0','1421623069');");
+E_D("replace into `wxch_message` values('120','oog1Yt4psiIHq51GV7ByOmr2VIzc','','menu:dzp','0','1421623076');");
+E_D("replace into `wxch_message` values('121','oog1Yt4psiIHq51GV7ByOmr2VIzc','图文消息','','0','1421623076');");
+E_D("replace into `wxch_message` values('122','oog1Yt4psiIHq51GV7ByOmr2VIzc','','menu:http://wxmiqi.wushuai.net/wechat/oauth/wxch_oauth.php?oid=1','0','1421623087');");
+E_D("replace into `wxch_message` values('123','oog1Yt4psiIHq51GV7ByOmr2VIzc','没有搜索到\"http://wxmiqi.wushuai.net/wechat/oauth/wxch_oauth.php?oid=1\"的商品\r\n我们为您推荐:<a href=\"http://wxmiqi.wushuai.net/mobile/goods.php?id=5&wxid=oog1Yt4psiIHq51GV7ByOmr2VIzc\">索爱原装M2卡读卡器</a>','','0','1421623087');");
+E_D("replace into `wxch_message` values('124','oog1YtymHKrMVQW-IF0WGn-gNhU0','','menu:kdcx','0','1421623168');");
+E_D("replace into `wxch_message` values('125','oog1YtymHKrMVQW-IF0WGn-gNhU0','您还没有订单，无法查询快递','','7','1421623168');");
+E_D("replace into `wxch_message` values('126','oog1YtymHKrMVQW-IF0WGn-gNhU0','','menu:http://wxmiqi.wushuai.net/wechat/oauth/wxch_oauth.php?oid=1','0','1421623173');");
+E_D("replace into `wxch_message` values('127','oog1YtymHKrMVQW-IF0WGn-gNhU0','没有搜索到\"http://wxmiqi.wushuai.net/wechat/oauth/wxch_oauth.php?oid=1\"的商品','','0','1421623173');");
+E_D("replace into `wxch_message` values('128','oog1YtymHKrMVQW-IF0WGn-gNhU0','','menu:help','0','1421623271');");
+E_D("replace into `wxch_message` values('129','oog1YtymHKrMVQW-IF0WGn-gNhU0','功能说明：\r\n输入news显示新品\r\n输入hot显示热销\r\n输入best显示推荐\r\n输入bd进入绑定会员流程\r\n输入ddcx查询最后一个订单\r\n输入kdcx查询最后一个订单中的快递\r\n输入ddlb显示多个订单信息\r\n输入help显示帮助说明','','0','1421623271');");
+E_D("replace into `wxch_message` values('130','oog1YtymHKrMVQW-IF0WGn-gNhU0','','menu:http://wxmiqi.wushuai.net/wechat/oauth/wxch_oauth.php?oid=1','0','1421623281');");
+E_D("replace into `wxch_message` values('131','oog1YtymHKrMVQW-IF0WGn-gNhU0','没有搜索到\"http://wxmiqi.wushuai.net/wechat/oauth/wxch_oauth.php?oid=1\"的商品\r\n我们为您推荐:<a href=\"http://wxmiqi.wushuai.net/mobile/goods.php?id=23&wxid=oog1YtymHKrMVQW-IF0WGn-gNhU0\"> 安娜苏魔影幻彩唇膏305#3.4g</a>','','0','1421623281');");
+E_D("replace into `wxch_message` values('132','oog1YtymHKrMVQW-IF0WGn-gNhU0','','menu:qrcode','0','1421623334');");
+E_D("replace into `wxch_message` values('133','oog1YtymHKrMVQW-IF0WGn-gNhU0','图文消息','','0','1421623334');");
+E_D("replace into `wxch_message` values('134','oog1Yt4jRDx3y_Li6KQ9dCn_Ljb0','','menu:subscribe','0','1421623593');");
+E_D("replace into `wxch_message` values('135','oog1Yt4jRDx3y_Li6KQ9dCn_Ljb0','','menu:http://tx.wushuai.net/wechat/oauth/wxch_oauth.php?oid=1','0','1421623608');");
+E_D("replace into `wxch_message` values('136','oog1Yt4jRDx3y_Li6KQ9dCn_Ljb0','没有搜索到\"http://tx.wushuai.net/wechat/oauth/wxch_oauth.php?oid=1\"的商品\r\n我们为您推荐:<a href=\"http://wxmiqi.wushuai.net/mobile/goods.php?id=23&wxid=oog1Yt4jRDx3y_Li6KQ9dCn_Ljb0\"> 安娜苏魔影幻彩唇膏305#3.4g</a>','','0','1421623608');");
+E_D("replace into `wxch_message` values('137','oog1Yt4psiIHq51GV7ByOmr2VIzc','','menu:http://tx.wushuai.net/wechat/oauth/wxch_oauth.php?oid=1','0','1421623633');");
+E_D("replace into `wxch_message` values('138','oog1Yt4psiIHq51GV7ByOmr2VIzc','没有搜索到\"http://tx.wushuai.net/wechat/oauth/wxch_oauth.php?oid=1\"的商品\r\n我们为您推荐:<a href=\"http://wxmiqi.wushuai.net/mobile/goods.php?id=24&wxid=oog1Yt4psiIHq51GV7ByOmr2VIzc\">贝玲妃留声机粉底霜9.5g</a>','','0','1421623633');");
+E_D("replace into `wxch_message` values('139','oog1Yt4psiIHq51GV7ByOmr2VIzc','','menu:http://wxmiqi.wushuai.net/wechat/oauth/wxch_oauth.php?oid=1','0','1421623653');");
+E_D("replace into `wxch_message` values('140','oog1Yt4psiIHq51GV7ByOmr2VIzc','没有搜索到\"http://wxmiqi.wushuai.net/wechat/oauth/wxch_oauth.php?oid=1\"的商品\r\n我们为您推荐:<a href=\"http://wxmiqi.wushuai.net/mobile/goods.php?id=23&wxid=oog1Yt4psiIHq51GV7ByOmr2VIzc\"> 安娜苏魔影幻彩唇膏305#3.4g</a>','','0','1421623653');");
+E_D("replace into `wxch_message` values('141','oog1Yt4psiIHq51GV7ByOmr2VIzc','','menu:help','0','1421624707');");
+E_D("replace into `wxch_message` values('142','oog1Yt4psiIHq51GV7ByOmr2VIzc','功能说明：\r\n输入news显示新品\r\n输入hot显示热销\r\n输入best显示推荐\r\n输入bd进入绑定会员流程\r\n输入ddcx查询最后一个订单\r\n输入kdcx查询最后一个订单中的快递\r\n输入ddlb显示多个订单信息\r\n输入help显示帮助说明','','0','1421624707');");
+E_D("replace into `wxch_message` values('143','oog1Yt4psiIHq51GV7ByOmr2VIzc','','menu:cdhf','0','1421624716');");
+E_D("replace into `wxch_message` values('144','oog1Yt4psiIHq51GV7ByOmr2VIzc','没有搜索到\"cdhf\"的商品\r\n我们为您推荐:<a href=\"http://wxmiqi.wushuai.net/mobile/goods.php?id=114&wxid=oog1Yt4psiIHq51GV7ByOmr2VIzc\">思亲肤绿茶泡沫洁面摩丝160ml</a>','','0','1421624716');");
+E_D("replace into `wxch_message` values('145','oog1Ytx7lWZILKGzU3_Sq77hWbPE','','menu:http://tx.wushuai.net/wechat/oauth/wxch_oauth.php?oid=1','0','1421626205');");
+E_D("replace into `wxch_message` values('146','oog1Ytx7lWZILKGzU3_Sq77hWbPE','没有搜索到\"http://tx.wushuai.net/wechat/oauth/wxch_oauth.php?oid=1\"的商品\r\n我们为您推荐:<a href=\"http://wxmiqi.wushuai.net/mobile/goods.php?id=117&wxid=oog1Ytx7lWZILKGzU3_Sq77hWbPE\">嘉娜宝玫瑰药用洗面奶150g</a>','','9','1421626205');");
+E_D("replace into `wxch_message` values('147','oog1Ytx7lWZILKGzU3_Sq77hWbPE','','menu:bd','0','1421626245');");
+E_D("replace into `wxch_message` values('148','oog1Ytx7lWZILKGzU3_Sq77hWbPE','您已经绑定了会员账号：weixin22\r\n如需重新绑定请输入cxbd','','0','1421626245');");
+E_D("replace into `wxch_message` values('149','oog1Ytx7lWZILKGzU3_Sq77hWbPE','','menu:http://wxmiqi.wushuai.net/wechat/oauth/wxch_oauth.php?oid=1','0','1421626255');");
+E_D("replace into `wxch_message` values('150','oog1Ytx7lWZILKGzU3_Sq77hWbPE','没有搜索到\"http://wxmiqi.wushuai.net/wechat/oauth/wxch_oauth.php?oid=1\"的商品\r\n我们为您推荐:<a href=\"http://wxmiqi.wushuai.net/mobile/goods.php?id=114&wxid=oog1Ytx7lWZILKGzU3_Sq77hWbPE\">思亲肤绿茶泡沫洁面摩丝160ml</a>','','0','1421626255');");
+E_D("replace into `wxch_message` values('151','oog1Ytx7lWZILKGzU3_Sq77hWbPE','','menu:','0','1421626306');");
+E_D("replace into `wxch_message` values('152','oog1Ytx7lWZILKGzU3_Sq77hWbPE','图文消息','','0','1421626306');");
+E_D("replace into `wxch_message` values('153','oog1Ytx7lWZILKGzU3_Sq77hWbPE','','menu:subscribe','0','1421626333');");
+E_D("replace into `wxch_message` values('154','oog1Yt_WDKwGom5blzIN3TZjtBnY','','menu:subscribe','0','1421627077');");
+E_D("replace into `wxch_message` values('155','oog1Yt_WDKwGom5blzIN3TZjtBnY','','menu:http://tx.wushuai.net/wechat/oauth/wxch_oauth.php?oid=1','0','1421627093');");
+E_D("replace into `wxch_message` values('156','oog1Yt_WDKwGom5blzIN3TZjtBnY','没有搜索到\"http://tx.wushuai.net/wechat/oauth/wxch_oauth.php?oid=1\"的商品\r\n我们为您推荐:<a href=\"http://wxmiqi.wushuai.net/mobile/goods.php?id=5&wxid=oog1Yt_WDKwGom5blzIN3TZjtBnY\">索爱原装M2卡读卡器</a>','','0','1421627093');");
+E_D("replace into `wxch_message` values('157','oog1Yt_WDKwGom5blzIN3TZjtBnY','','menu:kefu','0','1421627101');");
+E_D("replace into `wxch_message` values('158','oog1Yt_WDKwGom5blzIN3TZjtBnY','客服转接','','0','1421627101');");
+E_D("replace into `wxch_message` values('159','oog1Yt_WDKwGom5blzIN3TZjtBnY','','menu:bd','0','1421627109');");
+E_D("replace into `wxch_message` values('160','oog1Yt_WDKwGom5blzIN3TZjtBnY','您已经绑定了会员账号：weixin23\r\n如需重新绑定请输入cxbd','','0','1421627109');");
+E_D("replace into `wxch_message` values('161','oog1Yt_WDKwGom5blzIN3TZjtBnY','','menu:dzp','0','1421627117');");
+E_D("replace into `wxch_message` values('162','oog1Yt_WDKwGom5blzIN3TZjtBnY','图文消息','','0','1421627117');");
+E_D("replace into `wxch_message` values('163','oog1Yt_WDKwGom5blzIN3TZjtBnY','','menu:http://wxmiqi.wushuai.net/wechat/oauth/wxch_oauth.php?oid=1','0','1421627142');");
+E_D("replace into `wxch_message` values('164','oog1Yt_WDKwGom5blzIN3TZjtBnY','没有搜索到\"http://wxmiqi.wushuai.net/wechat/oauth/wxch_oauth.php?oid=1\"的商品\r\n我们为您推荐:<a href=\"http://wxmiqi.wushuai.net/mobile/goods.php?id=24&wxid=oog1Yt_WDKwGom5blzIN3TZjtBnY\">贝玲妃留声机粉底霜9.5g</a>','','0','1421627142');");
+E_D("replace into `wxch_message` values('165','oog1Yt_WDKwGom5blzIN3TZjtBnY','','menu:http://wxmiqi.wushuai.net/wechat/oauth/wxch_oauth.php?oid=1','0','1421627319');");
+E_D("replace into `wxch_message` values('166','oog1Yt_WDKwGom5blzIN3TZjtBnY','没有搜索到\"http://wxmiqi.wushuai.net/wechat/oauth/wxch_oauth.php?oid=1\"的商品\r\n我们为您推荐:<a href=\"http://wxmiqi.wushuai.net/mobile/goods.php?id=121&wxid=oog1Yt_WDKwGom5blzIN3TZjtBnY\">肌研极润玻尿酸保湿沫面乳100g</a>','','0','1421627319');");
+E_D("replace into `wxch_message` values('167','oog1Ytx7lWZILKGzU3_Sq77hWbPE','','menu:http://wxmiqi.wushuai.net/wechat/oauth/wxch_oauth.php?oid=1','0','1421628274');");
+E_D("replace into `wxch_message` values('168','oog1Ytx7lWZILKGzU3_Sq77hWbPE','没有搜索到\"http://wxmiqi.wushuai.net/wechat/oauth/wxch_oauth.php?oid=1\"的商品\r\n我们为您推荐:<a href=\"http://wxmiqi.wushuai.net/mobile/goods.php?id=5&wxid=oog1Ytx7lWZILKGzU3_Sq77hWbPE\">索爱原装M2卡读卡器</a>','','0','1421628274');");
+E_D("replace into `wxch_message` values('169','oog1Ytx7lWZILKGzU3_Sq77hWbPE','','menu:http://tx.wushuai.net/wechat/oauth/wxch_oauth.php?oid=1','0','1421628288');");
+E_D("replace into `wxch_message` values('170','oog1Ytx7lWZILKGzU3_Sq77hWbPE','没有搜索到\"http://tx.wushuai.net/wechat/oauth/wxch_oauth.php?oid=1\"的商品','','0','1421628288');");
+E_D("replace into `wxch_message` values('171','oog1Ytx7lWZILKGzU3_Sq77hWbPE','','menu:kefu','0','1421628295');");
+E_D("replace into `wxch_message` values('172','oog1Ytx7lWZILKGzU3_Sq77hWbPE','客服转接','','0','1421628295');");
+E_D("replace into `wxch_message` values('173','oog1Ytx7lWZILKGzU3_Sq77hWbPE','','menu:ddcx','0','1421628302');");
+E_D("replace into `wxch_message` values('174','oog1Ytx7lWZILKGzU3_Sq77hWbPE','您还没有订单','','0','1421628302');");
+E_D("replace into `wxch_message` values('175','oog1Ytx7lWZILKGzU3_Sq77hWbPE','','menu:kdcx','0','1421628307');");
+E_D("replace into `wxch_message` values('176','oog1Ytx7lWZILKGzU3_Sq77hWbPE','您还没有订单，无法查询快递','','0','1421628307');");
+E_D("replace into `wxch_message` values('177','oog1Ytx7lWZILKGzU3_Sq77hWbPE','','menu:help','0','1421628309');");
+E_D("replace into `wxch_message` values('178','oog1Ytx7lWZILKGzU3_Sq77hWbPE','功能说明：\r\n输入news显示新品\r\n输入hot显示热销\r\n输入best显示推荐\r\n输入bd进入绑定会员流程\r\n输入ddcx查询最后一个订单\r\n输入kdcx查询最后一个订单中的快递\r\n输入ddlb显示多个订单信息\r\n输入help显示帮助说明','','0','1421628309');");
+E_D("replace into `wxch_message` values('179','oog1Ytx7lWZILKGzU3_Sq77hWbPE','','menu:qiandao','0','1421628311');");
+E_D("replace into `wxch_message` values('180','oog1Ytx7lWZILKGzU3_Sq77hWbPE','签到成功+10','','0','1421628311');");
+E_D("replace into `wxch_message` values('181','oog1Ytx7lWZILKGzU3_Sq77hWbPE','','hot','0','1421628318');");
+E_D("replace into `wxch_message` values('182','oog1Ytx7lWZILKGzU3_Sq77hWbPE','图文消息','','181','1421628318');");
+
+require("../../inc/footer.php");
+?>

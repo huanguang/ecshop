@@ -1,0 +1,63 @@
+<!-- $Id: booking_info.htm 16854 2009-12-07 06:20:09Z sxc_shop $ -->
+{include file="pageheader.htm"}
+<div class="list-div">
+<form name='theForm' method="post" action="jiameng.php" onsubmit="return validate()">
+<table width="100%" cellpadding="3" cellspacing="1" >
+  <tr>
+    <th colspan="4">{$lang.booking}</th>
+  <tr>
+  <tr>
+    <td align="right" class="first-cell" >联系人：</td>
+    <td><input type="text" name="name" value="{$jiameng.name|escape}"></td>
+
+  </tr>
+  <tr>
+    <td align="right" class="first-cell" valign="top">联系方式：</td>
+    <td><input type="text" name="iphone" value="{$zhengji.iphone|escape}"></td>
+  </tr>
+  <tr>
+    <td align="right" class="first-cell" valign="top">邮箱：</td>
+    <td><input type="text" name="email" value="{$jiameng.email|escape}"></td>
+  </tr>
+  <tr>
+    <td align="right" class="first-cell" valign="top">地址：</td>
+    <td><input type="text" name="dizhi" value="{$jiameng.dizhi|escape}"></td>
+  </tr>
+  <tr>
+    <td align="right" class="first-cell" >
+    <input type="hidden" name="act" value="update">
+    <input type="hidden" name="id" value="{$jiameng.id}">
+    <input type="submit" value="提交修改"></td>
+    <td><input type="botton" value="重置表单"></td>
+
+  </tr>
+</table>
+</form>
+</div>
+<br />
+
+{insert_scripts files="../js/utils.js,validator.js"}
+{literal}
+<script language="JavaScript">
+<!--
+document.forms['theForm'].elements['dispose_note'].focus();
+
+onload = function()
+{
+    // 开始检查订单
+    startCheckOrder();
+}
+
+/**
+ * 检查表单输入的数据
+ */
+function validate()
+{
+    validator = new Validator("theForm");
+    validator.required("dispose_note", no_note);
+    return validator.passed();
+}
+//-->
+</script>
+{/literal}
+{include file="pagefooter.htm"}

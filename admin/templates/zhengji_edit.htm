@@ -1,0 +1,72 @@
+<!-- $Id: booking_info.htm 16854 2009-12-07 06:20:09Z sxc_shop $ -->
+{include file="pageheader.htm"}
+<div class="list-div">
+<form name='theForm' method="post" action="zhengji.php" onsubmit="return validate()">
+<table width="100%" cellpadding="3" cellspacing="1" >
+  <tr>
+    <th colspan="4">{$lang.booking}</th>
+  <tr>
+  <tr>
+    <td align="right" class="first-cell" >学校名称：</td>
+    <td><input type="text" name="school_name" value="{$zhengji.school_name|escape}"></td>
+
+  </tr>
+  <tr>
+    <td align="right" class="first-cell" >联系人：：</td>
+    <td><input type="text" name="sontact_person" value="{$zhengji.sontact_person|escape}"></td>
+
+  </tr>
+  <tr>
+    <td align="right" class="first-cell" valign="top">联系方式：</td>
+    <td><input type="text" name="contact_information" value="{$zhengji.contact_information|escape}"></td>
+  </tr>
+  <tr>
+    <td align="right" class="first-cell" valign="top">推荐人：</td>
+    <td><input type="text" name="name" value="{$zhengji.contact_information|escape}"></td>
+  </tr>
+  <tr>
+    <td align="right" class="first-cell" valign="top">推荐人联系方式：</td>
+    <td><input type="text" name="name" value="{$zhengji.contact_information|escape}"></td>
+  </tr>
+  <tr>
+    <td align="right" class="first-cell" valign="top">推荐理由：</td>
+    <td><textarea name="recommended_reason">{$zhengji.recommended_reason}</textarea>></td>
+  </tr>
+  <tr>
+    <td align="right" class="first-cell" >
+    <input type="hidden" name="act" value="update">
+    <input type="hidden" name="id" value="{$zhengji.id}">
+    <input type="submit" value="提交修改"></td>
+    <td><input type="botton" value="重置表单"></td>
+
+  </tr>
+</table>
+</form>
+</div>
+<br />
+
+{insert_scripts files="../js/utils.js,validator.js"}
+{literal}
+<script language="JavaScript">
+<!--
+document.forms['theForm'].elements['dispose_note'].focus();
+
+onload = function()
+{
+    // 开始检查订单
+    startCheckOrder();
+}
+
+/**
+ * 检查表单输入的数据
+ */
+function validate()
+{
+    validator = new Validator("theForm");
+    validator.required("dispose_note", no_note);
+    return validator.passed();
+}
+//-->
+</script>
+{/literal}
+{include file="pagefooter.htm"}

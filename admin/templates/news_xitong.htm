@@ -1,0 +1,46 @@
+<!-- $Id: booking_info.htm 16854 2009-12-07 06:20:09Z sxc_shop $ -->
+{include file="pageheader.htm"}
+<div class="list-div">
+<ul>
+{foreach from=$zhengji item=list}
+  <li {if $list.j_user_id > 0}style="text-align: right;"{/if}>{if $list.j_user_id > 0}{else}{$list.user_name} {$list.add_time}{/if}  <a style="color:red;" href="news.php?act=remove&id={$list.id}">删除</a>{$list.content} {if $list.j_user_id > 0}{$list.add_time}商家{else} {/if}</li>
+{/foreach}
+</ul>
+</div>
+
+<form name='theForm' method="post" action="news.php" onsubmit="return validatess()">
+
+<textarea name="content"></textarea>
+  <input type="hidden" name="act" value="insert">
+    <input type="hidden" name="type" value="2">
+    <input type="submit" value="发送"></td>
+</form>
+<br />
+
+{insert_scripts files="../js/utils.js,validator.js"}
+{literal}
+<script language="JavaScript">
+<!--
+document.forms['theForm'].elements['dispose_note'].focus();
+
+onload = function()
+{
+    // 开始检查订单
+    startCheckOrder();
+}
+
+/**
+ * 检查表单输入的数据
+ */
+function validatess()
+{
+    var content = document.getElementById('content').value;
+    if(content == ''){
+      alert("请输入要发送的内容");
+      return  false;
+    }
+}
+//-->
+</script>
+{/literal}
+{include file="pagefooter.htm"}

@@ -1,0 +1,96 @@
+
+<!--- security --->
+<div class="security"></div>
+<!--- security end --->
+
+<!--- link --->
+
+<div class="link_box">
+    <div class="main_box">
+<!--{if $helps_footer}-->
+        <ul>
+  <!-- {foreach from=$helps_footer item=help_cat name=no} -->
+            <li >
+                <p>{$help_cat.cat_name}</p>
+
+      <!-- {foreach from=$help_cat.article item=item} -->
+                <p><a href="{$item.url}">{$item.short_title}</a></p>
+      <!-- {/foreach} -->
+
+            </li>
+  <!-- {/foreach} -->
+        </ul>
+<!--{/if}-->
+        <div class="zxkf">
+            <span>客服热线</span>
+            <p>{$service_phone}</p>
+            <a href="#"><img src="images/zxkf.png"></a>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+
+<!--- link end --->
+
+<!--- bottom --->
+<div style="background:#fff;">
+<div class="main_box bottom">
+	<p>{$icp_number}</p>
+    <ul>
+    	<li><a href="article.php?id={$fuwu.article_id}">{$fuwu.title}</a></li>
+    	<li><a href="article.php?id={$wangzhan.article_id}">{$wangzhan.title}</a></li>
+    	<li><img src="images/bottom01.png"></li>
+    	<li><img src="images/bottom02.png"></li>
+    	<li><img src="images/bottom03.png"></li>
+    	<li><img src="images/bottom04.png"></li>
+    	<li><img src="images/bottom05.png"></li>
+    	<li><a href="#">网站导航</a></li>
+    </ul>
+    <div class="clear"></div>
+</div>
+</div>
+<!--- bottom end --->
+<div style="height:20px;background:#fff;"></div>
+
+
+<!--- 希望小学悬浮窗 --->
+<div id="chat_f1" style="display:none;">
+	<div id="chat_f1_main">
+		<div id="close"><img src="images/xqclose.png"></div>
+        <a href="#"><img src="images/xwpic.png"></a>
+	</div>
+	
+	<div id="chat_f1_bottom"></div>
+</div>
+<div id="chat_f2" style="display:block;"><img src="images/xwbg.png"></div>
+<!--- 希望小学悬浮窗 end --->
+
+<!--- 右侧悬浮 --->
+<script type="text/javascript">
+$(document).ready(function(){
+
+	$(".side ul li").hover(function(){
+		$(this).find(".sidebox").stop().animate({"width":"88px"},200).css({"opacity":"1","filter":"Alpha(opacity=100)","background":"#b1191a"})	
+	},function(){
+		$(this).find(".sidebox").stop().animate({"width":"28px"},200).css({"opacity":"0.8","filter":"Alpha(opacity=80)","background":"#282828"})	
+	});
+	
+});
+//回到顶部
+function goTop(){
+	$('html,body').animate({'scrollTop':0},600);
+}
+</script>
+<div class="side">
+	<ul>
+		<li style="border:none;"><a href="javascript:goTop();" class="sidetop"><img src="images/b01.png"></a></li>
+		<li><a href="http://wpa.qq.com/msgrd?v=3&uin=2850124773&site=qq&menu=yes""><div class="sidebox"><img src="images/b02.png">售前咨询</div></a></li>
+		<li><a href="http://wpa.qq.com/msgrd?v=3&uin=2850124773&site=qq&menu=yes""><div class="sidebox"><img src="images/b03.png">售后服务</div></a></li>
+		<li><a href="flow.php" ><div class="sidebox"><img src="images/b04.png">购物车</div></a></li>
+		<li><a class="sidetop r_box" href="javascript:;"><img src="images/b05.png">
+        	<div class="rbg"><img src="images/rwm.jpg" width="186" height="186" /></div>
+        </a></li>
+		<li><a href="join_form.php" ><div class="sidebox"><img src="images/b06.png">加盟我们</div></a></li>
+	</ul>
+</div>
+<!--- 右侧悬浮 end --->

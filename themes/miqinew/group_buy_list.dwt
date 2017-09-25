@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{$page_title}</title>
+<link rel="icon" href="favicon.gif" type="image/gif" />
+
+<link href="css/common.css" rel="stylesheet" type="text/css" />
+<link href="css/tuang.css" rel="stylesheet" type="text/css" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+<link href="themes/miqinew/css/common.css" type="text/css" rel="stylesheet" />
+<link href="themes/miqinew/css/cart.css" type="text/css" rel="stylesheet" />
+<link href="themes/miqinew/style.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="themes/miqinew/js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+
+<script type="text/javascript" src="js/nav.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+<script type="text/javascript" src="js/modal.js"></script>
+<script type="text/javascript" src="js/tuan.js"></script>
+<style>
+#nav .mod_subcate{top:0;}
+</style>
+</head>
+
+<body>
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+<!-- tuang -->
+<div class="cur_wz" style="display:none;">
+  <!-- #BeginLibraryItem "/library/ur_here.lbi" --><!-- #EndLibraryItem -->
+</div>
+
+<div class="main_box">
+    <div class="pinpai_tejia">
+    	<ul>
+        {foreach from=$categories_pro item=cat name=names}
+        {if $smarty.foreach.names.iteration < 7}
+        <li><a {if $smarty.foreach.names.iteration%3 eq 0}style="margin-right:0;"{/if} href="{if $smarty.foreach.names.iteration eq '1'}#hong{/if}{if $smarty.foreach.names.iteration eq '2'}#tianbai{/if}{if $smarty.foreach.names.iteration eq '3'}#qipao{/if}{if $smarty.foreach.names.iteration eq '4'}#juhui{/if}{if $smarty.foreach.names.iteration eq '5'}#lihelibao{/if}{if $smarty.foreach.names.iteration eq '6'}#qunwei{/if}"><div class="heise_beij"></div><img src="data/category/{$cat.cat_img}" width="380" height="190"><div class="yanzhe"><b>{$cat.name}</b><p>{$cat.cat_desc}</p><u>{$cat.keywords}</u></div></a></li>
+        {/if}
+        {/foreach}
+        </ul>
+    </div>
+
+
+    <div class="blank10"></div>
+{foreach from=$categories_pro item=cat name=names}
+        {if $smarty.foreach.names.iteration < 7}
+    <a {if $smarty.foreach.names.iteration eq '1'}name="hong" id="hong"{/if}{if $smarty.foreach.names.iteration eq '2'}name="tianbai" id="tianbai"{/if}{if $smarty.foreach.names.iteration eq '3'}name="qipao" id="qipao"{/if}{if $smarty.foreach.names.iteration eq '4'}name="juhui" id="juhui"{/if}{if $smarty.foreach.names.iteration eq '5'}name="lihelibao" id="lihelibao"{/if}{if $smarty.foreach.names.iteration eq '6'}name="qunwei" id="qunwei"{/if}></a>
+  	<div class="gexin_biaoti"><span>{$cat.name}</span></div>
+
+    <div class="hongjiu_geshu">
+        {foreach from=$cat.goods_tg item=goods name=goodss}
+        <dl {if $smarty.foreach.goodss.iteration %2 eq 0}style="border-right:1px solid #e5e5e5;width:588px;"{/if}>
+            <dt>
+                <a href="group_buy.php?act=view&id={$goods.act_id}"><img src="{$goods.goods_img}" width="185" height="185"><div class="jiaren_yyue"><b>限量{$goods.ext_info.restrict_amount}支 剩余{$goods.shengyu}支</b><div class="pro_time2"  ><p><i class="time_icon2" ></i><span  class="endtime" value="{$goods.end_time}" showday="show"></span></p></div></div></a>
+            </dt>
+            <dd><b><a href="group_buy.php?act=view&id={$goods.act_id}">{$goods.act_name}</a></b>
+          <p class="ershisi_001">{$goods.act_desc}</p><p class="ershisi_002"><span>酒评：</span>{$goods.act_desc2}</p><div class="jiage_shuzi"><span>￥<strong>{$goods.shop_price}</strong></span><a href="group_buy.php?act=view&id={$goods.act_id}" class="ljgm" style="    color: #fff;
+    text-decoration: none;">立即抢购</a></div><div class="jiage_paixun"><span>原价<br>￥{$goods.market_price}</span><span>折扣<br>{$goods.zhekou}折</span><span style="border-right:0;">可节省<br>￥{$goods.jianjiage}</span></div></dd>
+        </dl>
+        {/foreach}
+        
+
+    </div>
+    <div class="tggd"></div>
+    {/if}
+        {/foreach}
+<style>
+    .endtime{
+        color:red;
+    }
+</style>
+
+        <script type="text/javascript">
+    
+    $(function(){
+        var datename = new Date();
+        var Offset = datename.getTimezoneOffset() * 28800;
+        
+        setInterval(function(){
+          $(".endtime").each(function(){
+            var obj = $(this);
+            var endTime = new Date(parseInt(obj.attr('value')) * 1000 - Offset) ;
+            var show_day =  obj.attr('showday');
+            var nowTime = new Date();
+            var nMS=endTime.getTime() - nowTime.getTime();
+            var myD=Math.floor(nMS/(1000 * 60 * 60 * 24));
+            var myH_show=Math.floor(nMS/(1000*60*60) % 24);
+            var myH=Math.floor(nMS/(1000*60*60));
+            var myM=Math.floor(nMS/(1000*60)) % 60;
+            var myS=Math.floor(nMS/1000) % 60;
+            var myMS=Math.floor(nMS/100) % 10;
+            
+            if(myS>=0){
+                if(show_day == 'show')
+                {
+                    var str = '剩'+myD+'天'+myH_show+'小时'+myM+'分'+myS+'秒';
+                }
+                else
+                {
+                    var str = '<span>'+myH+'</span>时<span>'+myM+'</span>分<span>'+myS+'</span>秒';
+                }
+            }else{
+                var str = "已结束！";   
+            }
+            obj.html(str);
+          });
+        }, 100);
+    })
+    
+</script> 
+
+</div>
+<!--- tuang end --->
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+</body>
+</html>

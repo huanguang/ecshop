@@ -1,0 +1,83 @@
+<!-- {if $hot_goods} --> 
+  <!-- {if $cat_rec_sign neq 1} -->
+      <div class="rxcp_r">
+      <div class="hd rx"  id="itemHot">
+          <div class="tit">
+          <span>1F</span><font>热销产品</font>
+          <div class="clear"></div></div>
+        <ul id="on2">
+        {if $cat_rec[3]}
+        {foreach from=$cat_rec[3] item=rec_data name=nmaes}
+          {if $smarty.foreach.nmaes.iteration < '2'}
+        <li >
+                  <a href="javascript:void(0)" style="text-decoration: none;" onmouseover="change_tab_style('itemHot', 'li', this);get_cat_recommend(3,{$rec_data.cat_id})">
+                  <input type="hidden" id="diyi" value="{$rec_data.cat_id}">
+                  {$rec_data.cat_name}
+                </li>
+                {/if}
+            {/foreach}
+          {foreach from=$cat_rec[3] item=rec_data name=nmaes}
+          {if $smarty.foreach.nmaes.iteration > '1'}
+                <li >
+                  <a href="javascript:void(0)" style="text-decoration: none;" onmouseover="change_tab_style('itemHot', 'li', this);get_cat_recommend(3, {$rec_data.cat_id})">
+                  {$rec_data.cat_name}
+                </li>
+                {/if}
+            {/foreach}
+        {/if}
+                </ul>
+      </div>
+  <!-- {/if} -->
+{if $cat_rec[3]}  
+<script>
+    window.onload= function(){
+        var danzhi = document.getElementById('diyi').value;
+        get_cat_recommend(3,danzhi);
+    };
+</script>
+{/if}
+      <div id="show_hot_area" class="bd">
+                
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+              <ul>
+    <!-- {foreach from=$hot_goods item=goods} -->
+          <li  class="li1">
+            <div class="pic">
+            <a href="{$goods.url}">
+            <img src="{$goods.thumb}" width="185" height="160" /></a></div>
+            <div class="wz">
+                          <div class="jg">
+                                <span>￥{$goods.shop_price}.00</span>
+                              <s>￥{$goods.market_price}</s>
+                            </div>
+                          <div class="tit">
+                          <a href="{$goods.url}">
+                          {$goods.short_style_name}</a></div>
+                            <div class="yshp">
+                              <div class="yshp_l">已售：<span>{$goods.count_xiaoliang}</span></div>
+                              <div class="yshp_r">好评：<span>{if $goods.count_comment eq '0'}100%{else}{$goods.count_comment}%{/if}</span></div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                        <div class="jb01"></div>
+          </li>
+  <!-- {/foreach} -->
+                </ul>
+                <div class="clear"></div>
+                </div>
+      </div>
+    </div>
+<!-- {/if} -->

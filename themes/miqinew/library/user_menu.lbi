@@ -1,0 +1,34 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<div class="dongtai_l">
+<div id="questions" class="article_l">
+  <div class="tit">会员首页</div>
+  <ul>
+    <li class="clearfix fold">
+      <h5><b class="UI-ask"></b>会员信息</h5>
+      <div class="foldContent" style="display:block;">
+        <p><a href="user.php?act=profile">我的资料</a></p>
+        <p><a href="user.php?act=mmxg">密码修改</a></p>
+      </div>
+    </li>
+    <li class="clearfix">
+      <h5><b class="UI-ask"></b>订单管理</h5>
+      <div class="foldContent" style="display:block;">
+        <p><a href="user.php?act=order_list">我的订单</a></p>
+        <p><a href="user.php?act=address_list">收货地址管理</a></p>
+        <p><a href="user.php?act=booking_list">我的预约订单</a></p>
+      </div>
+    </li>
+    <li class="clearfix">
+      <h5><b class="UI-ask"></b>我的信息</h5>
+      <div class="foldContent" style="display:block;">
+        <p><a href="user.php?act=collection_list">我的收藏</a></p>
+        <p><a href="user.php?act=jifen">我的积分</a></p>
+        <p><a href="user.php?act=comment_list">我的评论</a></p>
+        <p><a href="user.php?act=affiliate">我的邀请码</a></p>
+        <p><a href="user.php?act=zj">我的足迹</a></p>
+      </div>
+    </li>
+    </ul>
+    <div class="clear"></div>
+</div>
+</div> 

@@ -1,0 +1,31 @@
+ecshop 微信扫码支付插件
+
+目录结构:
+|-----includes	  #可以直接覆盖
+|
+|-----languages	  #可以直接覆盖         
+|
+|-----phpqrcode	  #二维码生成工具, 看需要导入
+|
+|-----README	  #本说明文件
+|
+|-----respond.php  #可以直接覆盖
+|
+|-----user.php     #只要172~177行就可以了
+|
+|-----wxpay_notify.php #在微信公众平台设置的回调地址, 例如 http://www.example.com/wxpay_notify.php
+
+
+注意:
+1. wxpay_notify.php 要根据注释做一些修改
+
+
+
+ecshop微信支付流程:
+1. 下单时选择“微信支付”, 会自动调用wxpay::getcode() 生成支付按钮										wxpay::getcode();
+2. 点击支付按钮生成支付二维码 																			user.php?act=build_qrcode
+3. 使用微信客户端扫描二维码, 微信系统调用在微信公众平台设置的回调地址，再用回调地址发起支付请求，请求中包含支付动作完成后的回调地址 		wxpay_notify.php
+4. 微信客户端处理支付流程, 支付动作完成后，调用第3步传过去的回调地址																		respond.php 
+4. 在回调地址中处理业务逻辑																													wxpay::respond();
+
+至此整个流程完成

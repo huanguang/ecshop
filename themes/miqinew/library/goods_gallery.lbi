@@ -1,0 +1,34 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+
+<body>
+
+	<!--  缩略图  -->
+	<div class=jqzoom id=spec-n1 >
+		<IMG height=350
+		src="{$goods.goods_img}"  id="J_prodImg" jqimg="{$goods.goods_img}" width=350 />
+	</div>
+
+	<div id=spec-n5>
+		<div class=control id=spec-left>
+			<img src="images/left.gif" />
+		</div>
+
+	  <!--  小图 -->
+		<div id=spec-list>
+			<ul class=list-h>
+              <!-- {if $pictures}--> 
+              <!-- {foreach from=$pictures item=picture name=foo}-->
+				<li>
+					<img src="{if $picture.thumb_url}{$picture.thumb_url}{else}{$picture.img_url}{/if}" />
+				 </li>
+              <!--{/foreach}--> 
+              <!-- {/if}-->
+	
+			</ul>
+		</div>
+		<div class=control id=spec-right>
+			<img src="images/right.gif" />
+		</div>
+		
+    </div>
